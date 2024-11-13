@@ -1,0 +1,51 @@
+apply plugin: 'com.android.library'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-kapt'
+
+apply from: "$project.rootDir/tools/script-lint.gradle"
+apply from: "$project.rootDir/tools/script-ktlint.gradle"
+
+android {
+    compileSdkVersion config.targetSdkVersion
+
+    defaultConfig {
+        minSdkVersion config.minSdkVersion
+        targetSdkVersion config.targetSdkVersion
+
+        consumerProguardFiles 'consumer-rules.pro'
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_17
+        targetCompatibility JavaVersion.VERSION_17
+    }
+
+    kotlinOptions {
+        jvmTarget = "17"
+    }
+    namespace 'at.specure.location.fused'
+    lint {
+        abortOnError true
+        htmlOutput file("$rootDir/build_results/lint-result.html")
+        lintConfig file("$rootDir/tools/rules-lint.xml")
+        warningsAsErrors true
+        xmlOutput file("$rootDir/build_results/lint-result.xml")
+        xmlReport true
+    }
+}
+
+dependencies {
+    api project(path: ':location')
+
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
+    implementation "com.google.android.gms:play-services-location:$versions.location_services"
+    implementation "com.jakewharton.timber:timber:$versions.timber"
+}

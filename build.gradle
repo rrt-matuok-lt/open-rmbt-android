@@ -1,0 +1,51 @@
+// Top-level build file where you can add configuration options common to all sub-projects/modules.
+
+buildscript {
+    apply from: "$project.rootDir/dependencies.gradle"
+    apply from: "$project.rootDir/tools/utils.gradle"
+    ext {
+        kotlin_version = '1.9.20'
+    }
+
+    repositories {
+        mavenLocal()
+        mavenCentral()
+        maven { url "https://maven.google.com" }
+        google()
+    }
+
+    dependencies {
+        classpath 'com.android.tools.build:gradle:8.3.2'
+        classpath 'com.google.android.gms:oss-licenses-plugin:0.10.6'
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$versions.kotlin"
+        applyDependencies({ this })
+    }
+}
+
+plugins {
+    id 'io.gitlab.arturbosch.detekt' version '1.0.1'
+    id 'org.jetbrains.dokka' version '0.10.0'
+}
+
+allprojects {
+    repositories {
+        google()
+        mavenCentral()
+        maven {
+            url 'https://maven.google.com'
+        }
+        maven { url "https://jitpack.io" }
+    }
+}
+
+tasks.withType(org.jetbrains.kotlin.gradle.tasks.KotlinCompile).all {
+    kotlinOptions {
+        jvmTarget = "17"
+    }
+}
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}
+
+apply from: "$project.rootDir/tools/dokka.gradle" 
