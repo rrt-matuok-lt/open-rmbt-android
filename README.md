@@ -1,4 +1,10 @@
-## ABOUT
+
+### Lexita: Buildinti per android studio
+
+1.	Android studio: Build -> Generate Signed Bundle / Apk
+2.	Apk file will be found at: app\openRmbt\release
+
+### ABOUT
 
 Open-RMBT is an open source, multi-threaded bandwidth test used in [RTR-Netztest](https://www.netztest.at/de/) (RTR-Nettest in English).</p>
 This repository contains the source code of the new version of the RTR-Netztest application for Android.</br> The source code of the new implementation is developed by [Specure GmbH](https://martes-specure.com/), based on the [previous app](https://github.com/rtr-nettest/open-rmbt) developed by the Austrian Regulatory Authority for Broadcasting and Telecommunications ([RTR GmbH](https://www.rtr.at/)) and alladin-IT GmbH.</p>

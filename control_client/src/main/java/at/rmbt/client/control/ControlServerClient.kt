@@ -20,27 +20,28 @@ import javax.inject.Inject
 class ControlServerClient @Inject constructor(private val endpointProvider: ControlEndpointProvider, private val api: ControlServerApi) {
 
     fun getSettings(body: SettingsRequestBody): Maybe<SettingsResponse> {
-        return api.settingsCheck(endpointProvider.checkSettingsUrl, body).exec()
+        /// [Lexita] forcinam kad nebutu to sdev. preisdelio, nezinau kur ji uzdeda
+        return api.settingsCheck(endpointProvider.checkSettingsUrl.replace("sdev.", ""), body).exec()
     }
 
     fun getTestSettings(body: TestRequestRequestBody): Maybe<TestRequestResponse> {
-        return api.testRequest(endpointProvider.testRequestUrl, body).exec()
+        return api.testRequest(endpointProvider.testRequestUrl.replace("sdev.", ""), body).exec()
     }
 
     fun sendTestResults(body: TestResultBody): Maybe<BaseResponse> {
-        return api.sendTestResult(endpointProvider.sendTestResultsUrl, body).exec()
+        return api.sendTestResult(endpointProvider.sendTestResultsUrl.replace("sdev.", ""), body).exec()
     }
 
     fun sendQoSTestResults(body: QoSResultBody): Maybe<BaseResponse> {
-        return api.sendQoSTestResult(endpointProvider.sendQoSTestResultsUrl, body).exec()
+        return api.sendQoSTestResult(endpointProvider.sendQoSTestResultsUrl.replace("sdev.", ""), body).exec()
     }
 
     fun sendQoSTestResultsONT(body: QoSResultBody): Maybe<QosResultResponse> {
-        return api.sendQoSTestResultONT(endpointProvider.sendQoSTestResultsUrl, body).exec()
+        return api.sendQoSTestResultONT(endpointProvider.sendQoSTestResultsUrl.replace("sdev.", ""), body).exec()
     }
 
     fun getHistory(body: HistoryRequestBody): Maybe<HistoryResponse> {
-        return api.getHistory(endpointProvider.getHistoryUrl, body).exec()
+        return api.getHistory(endpointProvider.getHistoryUrl.replace("sdev.", ""), body).exec()
     }
 
     fun getHistoryONT(

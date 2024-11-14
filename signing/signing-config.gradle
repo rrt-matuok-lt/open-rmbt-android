@@ -17,7 +17,7 @@ android {
             keyAlias props['keyAlias']
             keyPassword props['keyPassword']
             storePassword props['storePassword']
-            storeFile file("$project.rootDir/signing/release.keystore")
+            storeFile file("$project.rootDir/signing/matuok.jks")
         }
     }
 }

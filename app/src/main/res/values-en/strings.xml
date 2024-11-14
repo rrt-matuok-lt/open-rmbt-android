@@ -1,3 +1,5 @@
+<!-- Original english values -->
+
 <!--
   ~ Licensed under the Apache License, Version 2.0 (the "License");
   ~ you may not use this file except in compliance with the License.
@@ -399,7 +401,7 @@
     <string name="cell_info_BSSID" translatable="false">BSSID</string>
     <string name="cell_info_SSID" translatable="false">SSID</string>
     <string name="cell_info_NCI" translatable="false">NCI</string>
-
+    
     <string name="label_location_access_disabled">Location permission missing</string>
     <string name="label_location_access_disabled_explanation">Grant location permission in settings.</string>
     <string name="label_some_permission_denied">App permissions missing</string>
