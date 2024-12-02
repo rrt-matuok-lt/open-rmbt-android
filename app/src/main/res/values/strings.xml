@@ -13,129 +13,129 @@
   -->
 
 <resources xmlns:tools="http://schemas.android.com/tools">
-    <string name="toolbar_title">RTR-NetTest</string>
+    <string name="toolbar_title">Matuok.lt</string>
 
     <!-- Navigation menu titles -->
-    <string name="menu_button_title_page">Home</string>
-    <string name="menu_button_history">History</string>
-    <string name="menu_button_statistics">Statistics</string>
-    <string name="menu_button_map">Map</string>
+    <string name="menu_button_title_page">Pagrindinis</string>
+    <string name="menu_button_history">Istorija</string>
+    <string name="menu_button_statistics">Statistika</string>
+    <string name="menu_button_map">Žemėlapis</string>
 
     <!-- Error dialog messages -->
-    <string name="dialog_title_error">Error</string>
-    <string name="error_unknown">Poor connection. Please try again later</string>
-    <string name="no_internet_connection_not_load_data">No Internet connection. Could not load data.</string>
+    <string name="dialog_title_error">Klaida</string>
+    <string name="error_unknown">Prastas ryšys. Bandykite dar kartą vėliau</string>
+    <string name="no_internet_connection_not_load_data">Nėra interneto ryšio. Nepavyko įkelti duomenų.</string>
 
     <!-- Terms and conditions screen -->
     <!-- Terms and conditions screen - content labeling -->
-    <string name="tc_tobottom">Scroll down</string>
+    <string name="tc_tobottom">Slinkite žemyn</string>
 
     <!-- Home screen -->
-    <string name="home_signal">Signal</string>
-    <string name="home_frequency">Frequency</string>
-    <string name="home_no_internet_connection">No Internet connection!</string>
-    <string name="home_no_internet_connection_details">No test is possible.</string>
+    <string name="home_signal">Signalas</string>
+    <string name="home_frequency">Dažnis</string>
+    <string name="home_no_internet_connection">Nėra interneto ryšio!</string>
+    <string name="home_no_internet_connection_details">Neįmanomas matavimas.</string>
     <string name="home_signal_value">%1$d dBm</string>
     <string name="home_signal_secondary_value" translatable="false">%1$d/%2$d dBm</string>
     <string name="home_frequency_value" translatable="false">%1$s MHz</string>
-    <string name="home_start_test_info">Press the button to start the test now!</string>
+    <string name="home_start_test_info">Paspauskite mygtuką, kad pradėtumėte matavimą dabar!</string>
     <string name="home_wifi">WLAN</string>
     <string name="home_vpn" translatable="false">VPN</string>
     <string name="home_bluetooth" translatable="false">Bluetooth</string>
-    <string name="home_coverage_mode">Coverage mode</string>
-    <string name="public_ip_address">Public address</string>
-    <string name="private_ip_address">Local address</string>
+    <string name="home_coverage_mode">Aprėpties režimas</string>
+    <string name="public_ip_address">Viešas kreipimasis</string>
+    <string name="private_ip_address">Vietinis adresas</string>
     <!-- Home screen - content labeling -->
-    <string name="home_ipv4">IPv4 address</string>
-    <string name="home_ipv6">IPv6 address</string>
-    <string name="home_location">Location</string>
-    <string name="home_settings">Settings</string>
-    <string name="home_home">Home</string>
-    <string name="home_map">Map</string>
-    <string name="home_statistics">Statistics</string>
-    <string name="home_history">History</string>
-    <string name="home_loop_mode_active">Loop mode enabled</string>
+    <string name="home_ipv4">IPv4 adresas</string>
+    <string name="home_ipv6">IPv6 dresas</string>
+    <string name="home_location">Vieta</string>
+    <string name="home_settings">Nustatymai</string>
+    <string name="home_home">Pagrindinis</string>
+    <string name="home_map">Žemėlapis</string>
+    <string name="home_statistics">Statistika</string>
+    <string name="home_history">Istorija</string>
+    <string name="home_loop_mode_active">Įjungtas ciklo režimas</string>
 
 
     <!-- Preference titles -->
-    <string name="options">Options</string>
-    <string name="preferences_general_settings">General settings</string>
+    <string name="options">Parinktys</string>
+    <string name="preferences_general_settings">Bendrieji nustatymai</string>
     <string name="preferences_ndt">NDT</string>
-    <string name="preferences_qos_measurement">QoS measurement</string>
-    <string name="preferences_qos_measurement_only_after_some_time">Only after 2 hours</string>
-    <string name="preferences_qos_measurement_only_after_some_time_summary">Do not perform new QoS measurements, if the last one was done less than 2 hours ago.</string>
-    <string name="preferences_location">Location</string>
-    <string name="preferences_loop_mode">Loop mode</string>
-    <string name="preferences_advanced_settings">Advanced settings</string>
-    <string name="preferences_loop_mode_summary">New test after waiting time or covering the distance. Max. 2 days</string>
-    <string name="preferences_loop_mode_min_delay">Waiting time (in minutes)</string>
-    <string name="preferences_loop_mode_max_movement">Distance (in meters)</string>
-    <string name="preferences_expert_mode">Expert mode</string>
-    <string name="preferences_expert_mode_summary">Show advanced settings and information</string>
-    <string name="preferences_ipv4_only">IPv4 only</string>
-    <string name="preferences_ipv4_only_sum">Do not use IPv6</string>
-    <string name="preferences_radio_info">Radio info</string>
-    <string name="preferences_radio_info_sum">Details on radio configuration</string>
-    <string name="preferences_contact">Contact</string>
-    <string name="preferences_go_to_website">Go to website</string>
-    <string name="preferences_contact_us">Contact us</string>
-    <string name="preferences_additional_Information">Additional information</string>
-    <string name="preferences_client_uuid">Client UUID</string>
-    <string name="preferences_test_cases">Number of tests performed</string>
-    <string name="preferences_about">About</string>
-    <string name="preferences_source_code">Source code</string>
-    <string name="preferences_data_protection">Privacy policy and terms of use</string>
-    <string name="preferences_developed_by">Developed by Specure GmbH</string>
+    <string name="preferences_qos_measurement">QoS matavimas</string>
+    <string name="preferences_qos_measurement_only_after_some_time">Tik po 2 val</string>
+    <string name="preferences_qos_measurement_only_after_some_time_summary">Neatlikite naujų QoS matavimų, jei paskutinis buvo atliktas mažiau nei prieš 2 valandas.</string>
+    <string name="preferences_location">Vieta</string>
+    <string name="preferences_loop_mode">Ciklo režimas</string>
+    <string name="preferences_advanced_settings">Išplėstiniai nustatymai</string>
+    <string name="preferences_loop_mode_summary">Naujas matavimas po laukimo laiko arba įveikus atstumą. Maks. 2 dienos</string>
+    <string name="preferences_loop_mode_min_delay">Laukimo laikas (minutėmis)</string>
+    <string name="preferences_loop_mode_max_movement">Atstumas (metrais)</string>
+    <string name="preferences_expert_mode">Eksperto režimas</string>
+    <string name="preferences_expert_mode_summary">Rodyti išplėstinius nustatymus ir informaciją</string>
+    <string name="preferences_ipv4_only">Tik IPv4</string>
+    <string name="preferences_ipv4_only_sum">Nenaudokite IPv6</string>
+    <string name="preferences_radio_info">Radijo informacija</string>
+    <string name="preferences_radio_info_sum">Išsami informacija apie radijo konfigūraciją</string>
+    <string name="preferences_contact">Susisiekite</string>
+    <string name="preferences_go_to_website">Eikite į svetainę</string>
+    <string name="preferences_contact_us">Susisiekite su mumis</string>
+    <string name="preferences_additional_Information">Papildoma informacija</string>
+    <string name="preferences_client_uuid">Kliento UUID</string>
+    <string name="preferences_test_cases">Atliktų matavimų skaičius</string>
+    <string name="preferences_about">Apie</string>
+    <string name="preferences_source_code">Šaltinio kodas</string>
+    <string name="preferences_data_protection">Privatumo politika ir naudojimo sąlygos</string>
+    <string name="preferences_developed_by">Sukūrė Specure GmbH</string>
     <string name="preferences_developer_page" translatable="false">https://specure.com/</string>
-    <string name="preferences_design_by">Design by Feinblick</string>
+    <string name="preferences_design_by">Dizainas Feinblick</string>
     <string name="preferences_design_page" translatable="false">https://www.feinblick.com</string>
-    <string name="preferences_network_info_by">Network information by NetMonster Core</string>
+    <string name="preferences_network_info_by">Tinklo informaciją pateikė NetMonster Cor</string>
     <string name="preferences_network_info_page" translatable="false">https://netmonster.app/</string>
-    <string name="preferences_version">Version</string>
-    <string name="preferences_commit_hash">Commit hash</string>
-    <string name="preferences_enter_code">Please enter the code</string>
-    <string name="preferences_developer_control_server">Control server</string>
-    <string name="preferences_override_control_server">Override control server</string>
-    <string name="preferences_override_control_server_sum">Activate custom control server settings</string>
-    <string name="preferences_override_control_server_host">Control host</string>
-    <string name="preferences_override_control_server_port">Control port</string>
-    <string name="preferences_override_control_server_ssl">Control SSL</string>
-    <string name="preferences_override_control_server_ssl_sum">Use encrypted connection to control server</string>
-    <string name="preferences_developer_options_disabled">Developer options disabled</string>
-    <string name="preferences_developer_options_available">Developer options available</string>
-    <string name="preferences_coverage_mode_disabled">Coverage mode disabled</string>
-    <string name="preferences_coverage_mode_available">Coverage mode enabled</string>
-    <string name="preferences_developer_try_again">Try again!</string>
-    <string name="preferences_developer_map_server">Map server</string>
-    <string name="preferences_developer_map_override">Override map server</string>
-    <string name="preferences_developer_map_override_sum">Activate custom map server settings</string>
-    <string name="preferences_developer_map_host">Map host</string>
-    <string name="preferences_developer_map_port">Map port</string>
-    <string name="preferences_developer_map_ssl">Map server SSL</string>
-    <string name="preferences_developer_map_ssl_sum">Use encrypted connection to map server</string>
-    <string name="preferences_category_developer_qos_server">QoS server</string>
-    <string name="preferences_developer_qos_ssl">QoS server SSL</string>
-    <string name="preferences_developer_qos_ssl_sum">Use encrypted connection to QoS server</string>
-    <string name="preferences_all_disabled">All deactivated.</string>
-    <string name="preferences_server_selection">Server selection</string>
-    <string name="preferences_default_server_selection">Default</string>
-    <string name="label_server_selection">Server selection</string>
-    <string name="preferences_tag">Tag</string>
+    <string name="preferences_version">Versija</string>
+    <string name="preferences_commit_hash">Įveskite maišą</string>
+    <string name="preferences_enter_code">Įveskite kodą</string>
+    <string name="preferences_developer_control_server">Valdymo serveris</string>
+    <string name="preferences_override_control_server">Nepaisyti valdymo serverio</string>
+    <string name="preferences_override_control_server_sum">Suaktyvinkite pasirinktinio valdymo serverio nustatymus</string>
+    <string name="preferences_override_control_server_host">Valdykite host</string>
+    <string name="preferences_override_control_server_port">Valdykite port</string>
+    <string name="preferences_override_control_server_ssl">Valdykite SSL</string>
+    <string name="preferences_override_control_server_ssl_sum">Norėdami valdyti serverį, naudokite šifruotą ryšį</string>
+    <string name="preferences_developer_options_disabled">Kūrėjo parinktys išjungtos</string>
+    <string name="preferences_developer_options_available">Galimos kūrėjo parinktys</string>
+    <string name="preferences_coverage_mode_disabled">Aprėpties režimas išjungtas</string>
+    <string name="preferences_coverage_mode_available">Aprėpties režimas įjungtas</string>
+    <string name="preferences_developer_try_again">Bandyk dar kartą!</string>
+    <string name="preferences_developer_map_server">Žemėlapio serveris</string>
+    <string name="preferences_developer_map_override">Nepaisyti žemėlapio serverio</string>
+    <string name="preferences_developer_map_override_sum">Suaktyvinkite tinkintus žemėlapio serverio nustatymus</string>
+    <string name="preferences_developer_map_host">Žemėlapio host</string>
+    <string name="preferences_developer_map_port">Žemėlapio port</string>
+    <string name="preferences_developer_map_ssl">Žemėlapio serverio SSL</string>
+    <string name="preferences_developer_map_ssl_sum">Naudokite šifruotą ryšį su žemėlapių serveriu</string>
+    <string name="preferences_category_developer_qos_server">QoS serveris</string>
+    <string name="preferences_developer_qos_ssl">QoS serverio SSL</string>
+    <string name="preferences_developer_qos_ssl_sum">Naudokite šifruotą ryšį su QoS serveriu</string>
+    <string name="preferences_all_disabled">Viskas išjungta.</string>
+    <string name="preferences_server_selection">Serverio pasirinkimas</string>
+    <string name="preferences_default_server_selection">Numatytoji</string>
+    <string name="label_server_selection">Serverio pasirinkimas</string>
+    <string name="preferences_tag">Žyma</string>
 
     <!-- Location Dialog -->
-    <string name="location_dialog_label_title">Location</string>
-    <string name="location_dialog_label_position">Position</string>
-    <string name="location_dialog_label_accuracy">Accuracy</string>
-    <string name="location_dialog_label_age">Age</string>
-    <string name="location_dialog_label_source">Source</string>
-    <string name="location_dialog_label_altitude">Altitude</string>
-    <string name="location_dialog_label_speed">Speed</string>
-    <string name="location_dialog_label_satellites">Satellites</string>
-    <string name="location_dialog_label_location_progress_message">Determining location, please wait…</string>
-    <string name="open_gps_setting_dialog_label_gps_not_enabled">Location services are not enabled. Would you like to modify location settings?</string>
-    <string name="open_gps_setting_dialog_label_open_gps_setting">Open location settings</string>
-    <string name="open_gps_setting_dialog_label_cancel">Cancel</string>
-    <string name="location_dialog_not_available">Not available</string>
+    <string name="location_dialog_label_title">Vieta</string>
+    <string name="location_dialog_label_position">Padėtis</string>
+    <string name="location_dialog_label_accuracy">Tikslumas</string>
+    <string name="location_dialog_label_age">Amžius</string>
+    <string name="location_dialog_label_source">Šaltinis</string>
+    <string name="location_dialog_label_altitude">Aukštis virš jūros lygio</string>
+    <string name="location_dialog_label_speed">Greitis</string>
+    <string name="location_dialog_label_satellites">Palydovai</string>
+    <string name="location_dialog_label_location_progress_message">Nustatoma vieta, palaukite…</string>
+    <string name="open_gps_setting_dialog_label_gps_not_enabled">Įrenginio buvimo vietos nustatymo paslaugos neįjungtos. Ar norėtumėte pakeisti įrenginio buvimo vietos nustatymus?</string>
+    <string name="open_gps_setting_dialog_label_open_gps_setting">Atidarykite įrenginio buvimo vietos nustatymus</string>
+    <string name="open_gps_setting_dialog_label_cancel">Atšaukti</string>
+    <string name="location_dialog_not_available">Nėra</string>
     <string name="location_dialog_age">%1$s s</string>
     <string name="location_dialog_accuracy">%1$s m</string>
     <string name="location_dialog_speed">%1$s km/h</string>
@@ -144,37 +144,37 @@
     <string name="location_location_direction_e">E %1$s</string>
     <string name="location_location_direction_s">S %1$s</string>
     <string name="location_location_direction_w">W %1$s</string>
-    <string name="open_location_permission_dialog_label_location_not_permitted">RTR-NetTest is not allowed to use your location. Would you like to allow RTR-NetTest to use your location?</string>
-    <string name="open_location_permission_dialog_label_open_permission_setting">Open application settings</string>
+    <string name="open_location_permission_dialog_label_location_not_permitted">Matuok.lt neleidžiama naudoti jūsų įrenginio buvimo vietos. Ar norėtumėte leisti matuok.lt naudoti jūsų įrenginio buvimo vietą?</string>
+    <string name="open_location_permission_dialog_label_open_permission_setting">Atidarykite programos nustatymus</string>
 
 
-    <string name="text_ip_address_not_available">Address is not available</string>
-    <string name="input_setting_dialog_ok">OK</string>
-    <string name="input_setting_dialog_cancel">Cancel</string>
-    <string name="loop_mode_max_delay_invalid" tools:ignore="PluralsCandidate">Please choose a number between %1$d and %2$d.</string>
-    <string name="about_client_uuid_copied">Client UUID has been copied to clipboard.</string>
-    <string name="client_not_registered">App is not registered, try again later.</string>
+    <string name="text_ip_address_not_available">Adresas yra nepasiekiamas</string>
+    <string name="input_setting_dialog_ok">Gerai</string>
+    <string name="input_setting_dialog_cancel">Atšaukti</string>
+    <string name="loop_mode_max_delay_invalid" tools:ignore="PluralsCandidate">Pasirinkite skaičių nuo %1$d iki %2$d.</string>
+    <string name="about_client_uuid_copied">Kliento UUID buvo nukopijuotas į mainų sritį.</string>
+    <string name="client_not_registered">Aplikacija neregistruota, bandykite dar kartą vėliau.</string>
 
     <!-- Measurement screen -->
     <string name="measurement_ping_value">%1$s ms</string>
     <string name="measurement_ping_value_1f">%1$.1f ms</string>
     <string name="measurement_download_upload_speed">%1$s Mbit/s</string>
-    <string name="measurement_download">Download</string>
-    <string name="measurement_upload">Upload</string>
+    <string name="measurement_download">Atsisiųsti</string>
+    <string name="measurement_upload">Įkelti</string>
     <string name="measurement_dash">-</string>
     <string name="measurement_speed_chart_x_label_min">0s</string>
     <string name="measurement_speed_chart_x_label_max">8s</string>
-    <string name="measurement_ping">Ping</string>
-    <string name="measurement_down">Down</string>
-    <string name="measurement_up">Up</string>
-    <string name="measurement_qos">Quality of service (QoS)</string>
-    <string name="measurement_qos_web_site">Web site</string>
-    <string name="measurement_qos_transparent_connection">Transparent connection</string>
+    <string name="measurement_ping">Delsa</string>
+    <string name="measurement_down">Gavimas</string>
+    <string name="measurement_up">Siuntimas</string>
+    <string name="measurement_qos">Paslaugos kokybė (QoS)</string>
+    <string name="measurement_qos_web_site">Interneto svetainė</string>
+    <string name="measurement_qos_transparent_connection">Skaidrus ryšys</string>
     <string name="measurement_qos_dns">DNS</string>
-    <string name="measurement_qos_tcp_ports">TCP ports</string>
-    <string name="measurement_qos_udp_ports">UDP ports</string>
-    <string name="measurement_qos_unmodified_content">Unmodified content</string>
-    <string name="measurement_qos_traceroute">Traceroute</string>
+    <string name="measurement_qos_tcp_ports">TCP port</string>
+    <string name="measurement_qos_udp_ports">UDP port</string>
+    <string name="measurement_qos_unmodified_content">Nepakeistas turinys</string>
+    <string name="measurement_qos_traceroute">Maršruto sekimas</string>
     <string name="measurement_qos_voip">VoIP</string>
 
     <string-array name="measurement_speed_chart_y_labels">
@@ -194,179 +194,179 @@
     <string name="scale_value_0_1" translatable="false">0</string>
 
     <string name="label_qos">QoS</string>
-    <string name="label_upload">Upload</string>
-    <string name="label_download">Download</string>
-    <string name="label_ping">Ping</string>
-    <string name="label_init">Init</string>
+    <string name="label_upload">Siuntimas</string>
+    <string name="label_download">Gavimas</string>
+    <string name="label_ping">Delsa</string>
+    <string name="label_init">Pradž.</string>
     <string name="measurement_progress_units" translatable="false">%</string>
-    <string name="label_signal_strength">Signal</string>
-    <string name="network_label">Network</string>
-    <string name="technology_label">Technology</string>
+    <string name="label_signal_strength">Signalas</string>
+    <string name="network_label">Tinklas</string>
+    <string name="technology_label">Technologijos</string>
 
     <string name="speed_progress_units" translatable="false">Mbit/s</string>
-    <string name="title_cancel_measurement">Do you really want to cancel the ongoing measurement?</string>
-    <string name="text_continue_measurement">Continue measurement</string>
-    <string name="text_cancel_measurement">Cancel measurement</string>
-    <string name="text_stop_measurement">Stop measurement</string>
+    <string name="title_cancel_measurement">Ar tikrai norite atšaukti vykstantį matavimą?</string>
+    <string name="text_continue_measurement">Tęskite matavimą</string>
+    <string name="text_cancel_measurement">Atšaukti matavimą</string>
+    <string name="text_stop_measurement">Sustabdykite matavimą</string>
 
-    <string name="notification_test_title">RTR-NetTest is running</string>
+    <string name="notification_test_title">Atliekamas Matuok.lt matavimas</string>
 
-    <string name="test_dialog_error_text">Test failed. Please try again later.</string>
+    <string name="test_dialog_error_text">Matavimas nepavyko. Bandykite dar kartą vėliau.</string>
 
     <!-- Measurement screen - content labeling -->
-    <string name="measurement_cancel">Cancel</string>
+    <string name="measurement_cancel">Atšaukti</string>
 
 
     <!-- History -->
-    <string name="history_item_header_test">Date</string>
-    <string name="history_item_header_down">Down</string>
-    <string name="history_item_header_up">Up</string>
-    <string name="history_item_header_ping">Ping</string>
+    <string name="history_item_header_test">Data</string>
+    <string name="history_item_header_down">Gavimas</string>
+    <string name="history_item_header_up">Siuntimas</string>
+    <string name="history_item_header_ping">Delsa</string>
     <string name="history_item_header_ms">ms</string>
-    <string name="history_no_data">No data available.</string>
+    <string name="history_no_data">Nėra duomenų.</string>
 
     <!-- History screen - content labeling -->
-    <string name="history_settings">Settings</string>
-    <string name="history_sync">Sync</string>
-    <string name="history_items">History items</string>
+    <string name="history_settings">Nustatymai</string>
+    <string name="history_sync">Sinchronizuoti</string>
+    <string name="history_items">Istorijos elementai</string>
 
     <!-- Results -->
-    <string name="results_other_details">Further details</string>
-    <string name="results_qoe_videos_sd">Videos SD</string>
-    <string name="results_qoe_videos_hd">Videos HD</string>
-    <string name="results_qoe_videos_uhd">Videos UHD</string>
-    <string name="results_qoe_gaming">Gaming</string>
-    <string name="results_qoe_gaming_cloud">Gaming Cloud</string>
-    <string name="results_qoe_gaming_streaming">Gaming Streaming</string>
-    <string name="results_qoe_gaming_download">Gaming Download</string>
-    <string name="results_qoe_audio_streaming">Audio Streaming</string>
+    <string name="results_other_details">Daugiau informacijos</string>
+    <string name="results_qoe_videos_sd">Vaizdo įrašai SD</string>
+    <string name="results_qoe_videos_hd">Vaizdo įrašai  HD</string>
+    <string name="results_qoe_videos_uhd">Vaizdo įrašai  UHD</string>
+    <string name="results_qoe_gaming">Žaidimai</string>
+    <string name="results_qoe_gaming_cloud">Žaidimų debesis</string>
+    <string name="results_qoe_gaming_streaming">Žaidimų transliacija</string>
+    <string name="results_qoe_gaming_download">Žaidimų atsisiuntimas</string>
+    <string name="results_qoe_audio_streaming">Garso transliacija</string>
     <string name="results_qoe_voip">VoIP</string>
-    <string name="results_qoe_video_telephony">Video Telephony</string>
-    <string name="results_qoe_video_conferencing">Video Conferencing</string>
-    <string name="results_qoe_messaging">Messaging</string>
-    <string name="results_qoe_web">Web</string>
-    <string name="results_qoe_cloud">Cloud</string>
-    <string name="results_qoe_qos">QoS tests</string>
-    <string name="results_quality">Quality</string>
-    <string name="results_network_type">Type</string>
-    <string name="results_network_provider">Provider</string>
+    <string name="results_qoe_video_telephony">Vaizdo telefonija</string>
+    <string name="results_qoe_video_conferencing">Vaizdo konferencijos</string>
+    <string name="results_qoe_messaging">Susirašinėjimas žinutėmis</string>
+    <string name="results_qoe_web">Žiniatinklis</string>
+    <string name="results_qoe_cloud">Debesis</string>
+    <string name="results_qoe_qos">QoS matavimaii</string>
+    <string name="results_quality">Kokybė</string>
+    <string name="results_network_type">Tipas</string>
+    <string name="results_network_provider">Teikėjas</string>
     <string name="results_network_ssid">WLAN SSID</string>
-    <string name="result_test_details">Test details</string>
+    <string name="result_test_details">Matavimo detalės</string>
     <string name="qos_result_success_count" translatable="false">%1$d / %2$d</string>
     <string name="qos_test_number" translatable="false"># %1$d</string>
-    <string name="label_information">Information</string>
-    <string name="label_tests">Tests</string>
-    <string name="label_succeeded">SUCCEEDED</string>
-    <string name="label_failed">FAILED</string>
-    <string name="label_description">DESCRIPTION</string>
-    <string name="label_detail">DETAILS</string>
+    <string name="label_information">Informacija</string>
+    <string name="label_tests">Matavimai</string>
+    <string name="label_succeeded">PAVYKO</string>
+    <string name="label_failed">NEPAVYKO</string>
+    <string name="label_description">APRAŠYMAS</string>
+    <string name="label_detail">DETALĖS</string>
 
     <!-- Map -->
-    <string name="map_layer_communities">Communities</string>
-    <string name="map_layer_points">Points</string>
-    <string name="map_layer_automatic">Automatic</string>
-    <string name="map_label_overlay_type">Overlay type</string>
-    <string name="map_style_hybrid" translatable="false">Hybrid</string>
-    <string name="map_style_satellite" translatable="false">Satellite</string>
-    <string name="map_style_standard" translatable="false">Standard</string>
-    <string name="map_label_map_appearance">Map appearance</string>
-    <string name="title_marker_item_details">Show more details</string>
+    <string name="map_layer_communities">Bendruomenės</string>
+    <string name="map_layer_points">Taškai</string>
+    <string name="map_layer_automatic">Automatinis</string>
+    <string name="map_label_overlay_type">Perdangos tipas</string>
+    <string name="map_style_hybrid" translatable="false">Hibridinis</string>
+    <string name="map_style_satellite" translatable="false">Palydovas</string>
+    <string name="map_style_standard" translatable="false">Standartinis</string>
+    <string name="map_label_map_appearance">Žemėlapio išvaizda</string>
+    <string name="title_marker_item_details">Rodyti daugiau informacijos</string>
 
-    <string name="map_search_location_dialog_title">Search</string>
-    <string name="map_search_location_dialog_info">Search for an address or city:</string>
-    <string name="map_search_location_dialog_not_found">Address not found.</string>
-    <string name="map_search_location_not_supported">Sorry, this function is not supported by your device.</string>
+    <string name="map_search_location_dialog_title">Ieškoti</string>
+    <string name="map_search_location_dialog_info">Ieškokite adreso arba miesto:</string>
+    <string name="map_search_location_dialog_not_found">Adresas nerastas.</string>
+    <string name="map_search_location_not_supported">Atsiprašome, jūsų įrenginys nepalaiko šios funkcijos.</string>
 
     <!-- Map - content labeling -->
-    <string name="map_filters">Map filter</string>
-    <string name="map_layers">Change layer</string>
-    <string name="map_location">Center on current location</string>
-    <string name="map_search">Search location</string>
+    <string name="map_filters">Žemėlapio filtras</string>
+    <string name="map_layers">Keisti sluoksnį</string>
+    <string name="map_location">Centras dabartinėje vietoje</string>
+    <string name="map_search">Ieškokite vietos</string>
 
 
     <!-- Other -->
 
-    <string name="text_wait_loading">Loading results</string>
+    <string name="text_wait_loading">Įkeliami rezultatai</string>
 
-    <string name="title_sync">Synchronization</string>
-    <string name="text_sync_info">You have the possibility to join results from different devices. To do so, you have to enter an already requested synchronisation code or request a new one.</string>
-    <string name="button_sync_request_code">Request Code</string>
-    <string name="button_sync_enter_code">Enter Code</string>
-    <string name="text_sync_code_received">Please enter the code shown below on the other device to synchronise the results.</string>
-    <string name="text_sync_enter_code_desc">Please enter the code you received on your other device.</string>
-    <string name="button_close">Close</string>
-    <string name="toast_sync_code_copied_to_clipboard">Copied</string>
-    <string name="hint_sync_code">Code</string>
-    <string name="error_sync_code_short">The code must consist of twelve characters</string>
+    <string name="title_sync">Sinchronizavimas</string>
+    <string name="text_sync_info">Jūs turite galimybę perkelti rezultatus iš skirtingų įrenginių. Norėdami tai padaryti, turite įvesti jau turimą sinchronizavimo kodą arba paprašyti naujo.</string>
+    <string name="button_sync_request_code">Prašymo kodas</string>
+    <string name="button_sync_enter_code">Įveskite kodą</string>
+    <string name="text_sync_code_received">Norėdami sinchronizuoti rezultatus, kitame įrenginyje įveskite toliau pateiktą kodą.</string>
+    <string name="text_sync_enter_code_desc">Įveskite kodą, kurį gavote kitame įrenginyje.</string>
+    <string name="button_close">Uždaryti</string>
+    <string name="toast_sync_code_copied_to_clipboard">Nukopijuota</string>
+    <string name="hint_sync_code">Kodas</string>
+    <string name="error_sync_code_short">Kodą turi sudaryti dvylika simbolių</string>
 
-    <string name="notification_signal_test_title">Signal measurement is running</string>
-    <string name="notification_signal_test_text">RTR-NetTest signal measurement is running in the background</string>
+    <string name="notification_signal_test_title">Vyksta signalo matavimas</string>
+    <string name="notification_signal_test_text">Fone veikia Matuok.lt signalo matavimas</string>
 
-    <string name="notification_loop_mode_finished_title">Loop mode finished</string>
+    <string name="notification_loop_mode_finished_title">Ciklo režimas baigtas</string>
 
-    <string name="toast_signal_measurement_enabled">Signal measurement started.</string>
-    <string name="error_no_connection">No Internet connection. Could not load data.</string>
+    <string name="toast_signal_measurement_enabled">Pradėtas signalo matavimas.</string>
+    <string name="error_no_connection">Nėra interneto ryšio. Nepavyko įkelti duomenų.</string>
 
-    <string name="label_map_filters">Map settings</string>
-    <string name="text_filter_confirm">Accept</string>
-    <string name="text_filter_continue">Continue</string>
-    <string name="title_filters_type">Map type</string>
-    <string name="title_filters_subtype">Type options</string>
+    <string name="label_map_filters">Žemėlapio nustatymai</string>
+    <string name="text_filter_confirm">Priimti</string>
+    <string name="text_filter_continue">Tęsti</string>
+    <string name="title_filters_type">Žemėlapio tipas</string>
+    <string name="title_filters_subtype">Įveskite parinktis</string>
 
-    <string name="about_email_subject">Support request</string>
-    <string name="about_email_sending">Sending email…</string>
+    <string name="about_email_subject">Paramos prašymas</string>
+    <string name="about_email_sending">Siunčiamas el. laiškas…</string>
 
     <string name="graph_signal_value">-%1$s dBm</string>
 
-    <string name="notification_loop_mode_title_active">Loop mode is active</string>
-    <string name="notification_loop_mode_title_running">Loop mode is running (%1$d/%2$d)</string>
+    <string name="notification_loop_mode_title_active">Ciklo režimas aktyvus</string>
+    <string name="notification_loop_mode_title_running">Veikia ciklo režimas(%1$d/%2$d)</string>
 
-    <string name="title_loop_mode">Loop mode</string>
-    <string name="title_loop_count">Choose the number of tests</string>
-    <string name="text_loop_start">Start tests</string>
-    <string name="text_loop_mode">New test after waiting or covering the distance. Max. 2 days</string>
-    <string name="text_button_decline">Decline</string>
-    <string name="text_button_accept">Accept</string>
-    <string name="text_loop_instruction_1">The loop mode option for technically interested users allows the automatic repetition of RTR-NetTest. The first test starts right after activation of the loop-modus; further tests are carried out when either the waiting time has elapsed or the specified distance has been covered. Tests will be performed until the configured number of tests has been reached. The signal strength is measured continuously, also between two tests. The loop-modus can be stopped at any time respectively it stops after 48 hours. It needs to be explicitly pointed out that due to the loop mode it cannot be excluded that the tester is identified.</string>
-    <string name="text_loop_instruction_2">In the event of a great demand or very high number of tests in a specific area, the loop mode can be rejected by the test system in order to avoid overload. Please note that the loop-modus is (only) intended for use within the EU and the EEA. The loop-modus consumes a large amount of data. With fast connections, 10 tests can consume 1 GB or more of data. It is therefore strongly recommended that the loop-modus is only used with real flat rate tariffs, where additional data volume does not cause additional costs. The loop-modus drains the battery quickly. In pauses between the tests, the GPS and the display remain active and signal measurements continue, which means that the energy is used up much faster than during stand-by mode. The loop-modus should therefore only be used if an external power supply is available.</string>
-    <string name="title_loop_instruction_1">Activation</string>
-    <string name="title_loop_instruction_2">Usage</string>
+    <string name="title_loop_mode">Ciklo režimas</string>
+    <string name="title_loop_count">Pasirinkite matavimų skaičių</string>
+    <string name="text_loop_start">Pradėkite matavimus</string>
+    <string name="text_loop_mode">Naujas matavimas po laukimo arba įveikus distanciją. Maks. 2 dienos</string>
+    <string name="text_button_decline">Atmesti</string>
+    <string name="text_button_accept">Priimti</string>
+    <string name="text_loop_instruction_1">Techniškai besidomintiems vartotojams skirta ciklo režimo parinktis leidžia automatiškai kartoti Matuok.lt. Pirmasis matavimas prasideda iškart po ciklo režimo aktyvavimo; tolesni matavimai atliekami pasibaigus laukimo laikui arba įveikus nurodytą atstumą. Matavimai bus atliekami tol, kol bus pasiektas sukonfigūruotas matavimų skaičius. Signalo stiprumas matuojamas nuolat, taip pat tarp dviejų bandymų. Ciklo režimas gali būti sustabdytas bet kuriuo metu, atitinkamai jis sustoja po 48 valandų. Reikia aiškiai pabrėžti, kad dėl ciklo režimo negalima atmesti galimybės, kad bandytojas yra identifikuotas.</string>
+    <string name="text_loop_instruction_2">Esant dideliam poreikiui arba labai dideliam bandymų skaičiui konkrečioje srityje, bandymo sistema gali atmesti ciklo režimą, kad būtų išvengta perkrovos. Atkreipkite dėmesį, kad „loop-modus“ yra (tik) skirtas naudoti ES ir EEE. Ciklo režimas sunaudoja daug duomenų. Esant greitam ryšiui, 10 testų gali sunaudoti 1 GB ar daugiau duomenų. Todėl primygtinai rekomenduojama ciklo režimą naudoti tik su tikrais neriboto duomenų kiekio tarifais, kai papildomas duomenų kiekis nesukelia papildomų išlaidų. Ciklo režimas greitai iškraudinėja įrenginio bateriją. Pertraukose tarp bandymų GPS ir ekranas išlieka aktyvūs, o signalo matavimai tęsiasi, o tai reiškia, kad energija išnaudojama daug greičiau nei budėjimo režimu. Todėl ciklo režimas turėtų būti naudojamas tik tuo atveju, jei yra išorinis maitinimo šaltinis.</string>
+    <string name="title_loop_instruction_1">Aktyvinimas</string>
+    <string name="title_loop_instruction_2">Naudojimas</string>
 
-    <string name="text_filter_devices">Devices</string>
-    <string name="text_filter_networks">Networks</string>
-    <string name="label_filter_options">Options</string>
-    <string name="label_filter">Filter</string>
+    <string name="text_filter_devices">Įrenginiai</string>
+    <string name="text_filter_networks">Tinklai</string>
+    <string name="label_filter_options">Parinktys</string>
+    <string name="label_filter">Filtruoti</string>
 
-    <string name="loop_mode_next_test">Next test</string>
-    <string name="loop_mode_minutes">Minutes</string>
-    <string name="loop_mode_meters">Meters</string>
-    <string name="loop_mode_no_gps">No GPS</string>
-    <string name="or">or</string>
-    <string name="loop_mode_finished">RTR-NetTest loop mode finished!</string>
-    <string name="loop_continue_to_results">Continue to the result</string>
-    <string name="loop_run_again">Run again</string>
-    <string name="title_privacy_policy">Privacy policy</string>
-    <string name="text_terms_agree">I agree with RTR’s privacy policy and terms of use for RTR-NetTest.</string>
-    <string name="text_terms_agree_empty">You have to agree to the privacy policy and terms of use to continue.</string>
+    <string name="loop_mode_next_test">Kitas matavimas</string>
+    <string name="loop_mode_minutes">Minutės</string>
+    <string name="loop_mode_meters">Metrai</string>
+    <string name="loop_mode_no_gps">Nėra GPS</string>
+    <string name="or">ar</string>
+    <string name="loop_mode_finished">Matuok.lt ciklo režimas baigtas!</string>
+    <string name="loop_continue_to_results">Tęsti rezultatą</string>
+    <string name="loop_run_again">Pakartoti iš naujo</string>
+    <string name="title_privacy_policy">Privatumo politika</string>
+    <string name="text_terms_agree">Sutinku su Matuok.lt privatumo politika ir naudojimo sąlygomis.</string>
+    <string name="text_terms_agree_empty">Norėdami tęsti, turite sutikti su privatumo politika ir naudojimo sąlygomis.</string>
 
-    <string name="dialog_title_config_check">Please change the following values:</string>
-    <string name="label_ip_processing">Processing…</string>
-    <string name="radio_info_warning_title">Radio settings</string>
-    <string name="radio_info_warning_message">Be careful: Changing advanced settings of your radio configuration might be harmful to the stability and performance of your device.</string>
-    <string name="accept_risk">I accept the risk</string>
-    <string name="preferences_connection_details_not_supported">Extended connection details are not supported on this device</string>
+    <string name="dialog_title_config_check">Pakeiskite šias reikšmes:</string>
+    <string name="label_ip_processing">Apdorojama…</string>
+    <string name="radio_info_warning_title">Radijo nustatymai</string>
+    <string name="radio_info_warning_message">Būkite atsargūs: keisdami išplėstinius konfigūracijos nustatymus, galite pakenkti įrenginio stabilumui ir veikimui.</string>
+    <string name="accept_risk">Prisiimu riziką</string>
+    <string name="preferences_connection_details_not_supported">Išplėstinė ryšio informacija šiame įrenginyje nepalaikoma</string>
 
-    <string name="dialog_signal_info_band">Band</string>
-    <string name="dialog_signal_info_connection_status" translatable="false">Status</string>
-    <string name="dialog_signal_info_channel">Channel</string>
-    <string name="text_local_results">Local results only</string>
-    <string name="signal_measurement_terms_title">Activation and usage</string>
-    <string name="signal_measurement_terms_content">The signal-only loop mode option for technically interested users allows the automatic repetition of signal measurements - without any speed- or quality tests being carried out. The signal-only loop-modus can be stopped at any time respectively it stops automatically after 48 hours. The signal-only loop-modus is (only) intended for use within the EU and the EEA. The battery is quickly drained by the signal-only measurements. In the pauses between tests, the GPS and the display remain active and signal measurements continue, which means that the energy is used up much faster than in stand-by mode. The loop-modus should therefore only be used if an external power supply is available. It needs to be explicitly pointed out that due to the signal-only loop mode it cannot be excluded that the tester is identified.</string>
+    <string name="dialog_signal_info_band">Grupė</string>
+    <string name="dialog_signal_info_connection_status" translatable="false">Būsena</string>
+    <string name="dialog_signal_info_channel">Kanalas</string>
+    <string name="text_local_results">Vietiniai rezultatai</string>
+    <string name="signal_measurement_terms_title">Aktyvinimas ir naudojimas</string>
+    <string name="signal_measurement_terms_content">Signalo ciklo režimo parinktis techniškai suinteresuotiems vartotojams leidžia automatiškai kartoti signalo matavimus – neatliekant jokių greičio ar kokybės bandymų. Signalo ciklo režimą galima sustabdyti bet kuriuo metu, atitinkamai jis sustoja automatiškai po 48 valandų. Signalo ciklo režimas yra (tik) skirtas naudoti ES ir EEE. Įrenginio baterija greitai išsikrauna, matuojant tik signalą. Pertraukose tarp bandymų GPS ir ekranas išlieka aktyvūs, o signalo matavimai tęsiasi, o tai reiškia, kad energija išnaudojama daug greičiau nei budėjimo režimu. Todėl ciklo režimas turėtų būti naudojamas tik tuo atveju, jei yra prijungtas išorinis maitinimo šaltinis. Pabrežiame, kad dėl signalo ciklo režimo negalima atmesti galimybės, kad testeris yra identifikuotas.</string>
     <string name="home_ethernet" translatable="false">Ethernet</string>
 
     <!-- Other - content labeling -->
-    <string name="content_label_close">Close</string>
-    <string name="ip_info_ip_address">IP address</string>
+    <string name="content_label_close">Uždaryti</string>
+    <string name="ip_info_ip_address">IP adresas</string>
 
     <!-- Signal details -->
     <string name="cell_info_nr_arfcn" translatable="false">ARFCN</string>
@@ -399,31 +399,31 @@
     <string name="cell_info_BSSID" translatable="false">BSSID</string>
     <string name="cell_info_SSID" translatable="false">SSID</string>
     <string name="cell_info_NCI" translatable="false">NCI</string>
-
-    <string name="label_location_access_disabled">Location permission missing</string>
-    <string name="label_location_access_disabled_explanation">Grant location permission in settings.</string>
-    <string name="label_some_permission_denied">App permissions missing</string>
-    <string name="label_some_permission_denied_explanation">Grant permissions in settings.</string>
-    <string name="title_open_nettest_accuracy">Permissions for RTR-Netztest</string>
-    <string name="subtitle_open_nettest_accuracy">RTR-NetTest requires certain permissions to work.</string>
-    <string name="phone_permission_title">1. Phone permission</string>
-    <string name="location_permission_title">2. Location permission</string>
-    <string name="phone_permission_explanation">RTR-NetTest does not make phone calls. The telephone permission is necessary to identify the provider.</string>
-    <string name="location_permission_explanation">The location permission is necessary to identify the measurement location and to display it on the map. Without precise location permission, signal strength is unavailable on many devices. Use of loop mode while on the move is only possible with location permission.</string>
-    <string name="location_permissions_disclaimer">RTR-NetTest uses the location permission only during the measurement, the background permission is required to allow to run the loop mode in background.</string>
+    
+    <string name="label_location_access_disabled">Leidimas naudoti įrenginio buvimo vietą</string>
+    <string name="label_location_access_disabled_explanation">Nustatymuose suteikite leidimą naudoti įrenginio buvimo vietą.</string>
+    <string name="label_some_permission_denied">Trūksta aplikacijos leidimų</string>
+    <string name="label_some_permission_denied_explanation">Suteikite leidimus nustatymuose.</string>
+    <string name="title_open_nettest_accuracy">Matuok.lt leidimai</string>
+    <string name="subtitle_open_nettest_accuracy">Matuok.lt darbui reikalingi tam tikri leidimai.</string>
+    <string name="phone_permission_title">1. Telefono leidimas</string>
+    <string name="location_permission_title">2. Vietos leidimas</string>
+    <string name="phone_permission_explanation">Matuok.lt telefonu neskambina. Telefono leidimas yra reikalingas teikėjo tapatybei nustatyti.</string>
+    <string name="location_permission_explanation">Leidimas vietai reikalingas norint nustatyti matavimo vietą ir parodyti ją žemėlapyje. Be tikslios įrenginio buvimo vietos leidimo, signalo stiprumas gali būti nepasiekiamas daugelyje įrenginių. Naudoti ciklo režimą keliaujant galima tik suteikus įrenginio buvimo vietos leidimą.</string>
+    <string name="location_permissions_disclaimer">Matuok.lt įrenginio buvimo vietos leidimą naudoja tik matavimo metu, foninis leidimas reikalingas norint paleisti ciklo režimą fone.</string>
     <string name="PDF" translatable="false">PDF</string>
     <string name="CSV" translatable="false">CSV</string>
     <string name="XLSX" translatable="false">XLSX</string>
-    <string name="error_during_download">Download error</string>
-    <string name="error_opening_file">Error opening file</string>
-    <string name="download_complete">Download completed</string>
-    <string name="download_complete_description">File %1$s downloaded successfully. Tap to open it.</string>
-    <string name="downloading">Downloading</string>
-    <string name="download_progress">Downloaded %1$d%%</string>
-    <string name="history_filename">NetztestHistoryExport</string>
+    <string name="error_during_download">Atsisiuntimo klaida</string>
+    <string name="error_opening_file">Klaida atidarant failą</string>
+    <string name="download_complete">Atsisiuntimas baigtas</string>
+    <string name="download_complete_description">Failas %1$s sėkmingai atsisiųstas. Palieskite, kad atidarytumėte.</string>
+    <string name="downloading">Atsisiunčiama</string>
+    <string name="download_progress">Atsisiųsta %1$d%%</string>
+    <string name="history_filename">Matuok.lt Istorijos eksportavimas</string>
     <!-- Signal details - content labeling -->
 
-    <string name="notification_permission_title">3. Notification permission</string>
-    <string name="notification_permission_explanation">The notification permission is necessary to keep app alive during measurements executed on the background. Without notification permission, you will be not able to track measurement progress when app is on the background. The notification permission is required to allow to run the loop mode in background.</string>
+    <string name="notification_permission_title">3. Pranešimų leidimas</string>
+    <string name="notification_permission_explanation">Pranešimų leidimas reikalingas, kad aplikacija veiktų atliekant matavimus fone. Be pranešimų leidimo negalėsite stebėti matavimo eigos, kai programa veiks fone. Pranešimų leidimas yra reikalingas norint paleisti ciklo režimą fone.</string>
 
 </resources>

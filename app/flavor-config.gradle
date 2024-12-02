@@ -2,7 +2,7 @@ android {
 
     defaultConfig {
         manifestPlaceholders = [
-                googleMapsApiKey: ""
+                googleMapsApiKey: "AIzaSyDkUo3SLt2zublh5UOMUI_J9T2ogmXiq_U"
         ]
     }
 

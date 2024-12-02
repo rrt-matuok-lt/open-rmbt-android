@@ -19,6 +19,7 @@ import kotlinx.coroutines.flow.catch
 import kotlinx.coroutines.flow.flowOn
 import kotlinx.coroutines.flow.zip
 import kotlinx.coroutines.launch
+import timber.log.Timber
 import java.util.Locale
 import javax.inject.Inject
 
@@ -128,10 +129,11 @@ class ResultViewModel @Inject constructor(
 
     fun downloadFile(format: String) {
         val languageCode = Locale.getDefault().toLanguageTag().split("-")[0]
-        val statisticServerUrl = controlServerSettings.statisticsMasterServerUrl ?: "https://m-cloud.netztest.at/RMBTStatisticServer"
+        val statisticServerUrl = controlServerSettings.statisticsMasterServerUrl ?: "https://matuok.pantera.dev/RMBTStatisticServer"
         val url =
             if (format == "pdf") "$statisticServerUrl/export/pdf/$languageCode"
             else "$statisticServerUrl/opentests/search"
+        Timber.d("REDLOG: download file format: $format, languageCode: $languageCode, url: $url")
         this.testServerResultLiveData.value?.testOpenUUID?.let { openUUID ->
             viewModelScope.launch {
                 fileDownloader.downloadFile(

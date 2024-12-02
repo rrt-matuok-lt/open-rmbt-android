@@ -1,3 +1,4 @@
+
 {
   "config": [
     {
@@ -58,6 +59,12 @@
     {
       "name": "QOS_SSL",
       "value": "true",
+      "visible": false
+    },
+    {
+      "_comment": "TODO naudot sita vietoj ihardcodinto fallback url at: java/at/rtr/rmbt/android/viewmodel/HistoryDownloadViewModel.kt:107",
+      "name": "STATISTICS_DOWNLOAD_SERVER",
+      "value": "https://matuok.pantera.dev/RMBTStatisticServer",
       "visible": false
     },
     {

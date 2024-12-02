@@ -1,8 +1,10 @@
 
 ### Lexita: Buildinti per android studio
 
-1.	Android studio: Build -> Generate Signed Bundle / Apk
-2.	Apk file will be found at: app\openRmbt\release
+1. dependencies.gradle pakelt versija
+2. Android studio: Build -> Generate Signed Bundle / Apk
+	  use signing key: signing/matuok.jks
+3. Apk file will be found at: app\openRmbt\release
 
 ### ABOUT
 
@@ -12,7 +14,7 @@ The source code is published under [Apache version 2.0 license](https://github.c
 
 ### HOW TO BUILD
 
-1. Change app id to preferred one in dependencies.gradle (optional)
+1. Change app id to preferred one in dependencies.gradle (optional)[app-openRmbt-release.apk](app%2FopenRmbt%2Frelease%2Fapp-openRmbt-release.apk)
 2. Update signing config (optional)
 	1. Replace signing/debug.keystore with your own one
 	2. Update signing/debug.properties with credentials to your signing/debug.keystore key
