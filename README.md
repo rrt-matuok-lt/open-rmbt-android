@@ -1,10 +1,10 @@
 
 ### Lexita: Buildinti per android studio
 
-1. dependencies.gradle pakelt versija
+1. [dependencies.gradle] pakelt versija
 2. Android studio: Build -> Generate Signed Bundle / Apk
 	  use signing key: signing/matuok.jks
-3. Apk file will be found at: app\openRmbt\release
+3. Apk file will be found at: [app\openRmbt\release]
 
 ### ABOUT
 

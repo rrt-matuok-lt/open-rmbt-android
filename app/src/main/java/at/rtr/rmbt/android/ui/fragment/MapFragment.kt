@@ -47,12 +47,11 @@ private const val ANCHOR_U = 0.5f
 private const val ANCHOR_V = 0.865f
 
 // default map position and zoom when no location information is available
-// focus to Austria based on boundary box 'AT': ('Austria', (9.47996951665, 46.4318173285, 16.9796667823, 49.0390742051))
-// derived from Github/graydon/country-bounding-boxes.py
-// extracted from http//www.naturalearthdata.com/download/110m/cultural/ne_110m_admin_0_countries.zip
+// focus to Austria based on boundary box "LT": ["Lithuania", [21.06, 53.91, 26.59, 56.37]],
+// derived from https://github.com/sandstrom/country-bounding-boxes/blob/master/bounding-boxes.json
 // under public domain terms
-private const val DEFAULT_LAT = (49.0390742051F + 46.4318173285F) / 2F
-private const val DEFAULT_LONG = (16.9796667823F + 9.47996951665F) / 2F
+private const val DEFAULT_LAT = (53.91F + 56.37F) / 2F
+private const val DEFAULT_LONG = (21.06F + 26.59F) / 2F
 private const val DEFAULT_ZOOM_LEVEL = 6F
 private val DEFAULT_PRESENTATION_TYPE = MapPresentationType.AUTOMATIC
 
@@ -119,7 +118,7 @@ class MapFragment : BaseFragment(), MapMarkerDetailsAdapter.MarkerDetailsCallbac
 
         if (!mapViewModel.state.playServicesAvailable.get()) {
             binding.webMap.settings.javaScriptEnabled = true
-            binding.webMap.loadUrl("https://www.netztest.at/en/Karte")
+            binding.webMap.loadUrl("https://matuok.pantera.dev/lt/Karte")
         }
     }
 

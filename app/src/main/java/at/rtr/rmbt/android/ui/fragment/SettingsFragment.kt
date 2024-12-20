@@ -257,8 +257,9 @@ class SettingsFragment : BaseFragment(), InputSettingDialog.Callback,
             settingsViewModel.state.dataPrivacyAndTermsUrl.get()?.let { url ->
                 DataPrivacyAndTermsOfUseActivity.start(
                     requireContext(),
+                    // TODO locale cia pritaikyt
                     when (Locale.getDefault().language) {
-                        "de" -> String.format(url, "de")
+                        "lt" -> String.format(url, "lt")
                         else -> String.format(url, "en")
                     }
                 )

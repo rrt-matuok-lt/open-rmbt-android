@@ -47,7 +47,7 @@
     <string name="private_ip_address">Vietinis adresas</string>
     <!-- Home screen - content labeling -->
     <string name="home_ipv4">IPv4 adresas</string>
-    <string name="home_ipv6">IPv6 dresas</string>
+    <string name="home_ipv6">IPv6 adresas</string>
     <string name="home_location">Vieta</string>
     <string name="home_settings">Nustatymai</string>
     <string name="home_home">Pagrindinis</string>
@@ -95,27 +95,27 @@
     <string name="preferences_commit_hash">Įveskite maišą</string>
     <string name="preferences_enter_code">Įveskite kodą</string>
     <string name="preferences_developer_control_server">Valdymo serveris</string>
-    <string name="preferences_override_control_server">Nepaisyti valdymo serverio</string>
-    <string name="preferences_override_control_server_sum">Suaktyvinkite pasirinktinio valdymo serverio nustatymus</string>
-    <string name="preferences_override_control_server_host">Valdykite host</string>
-    <string name="preferences_override_control_server_port">Valdykite port</string>
-    <string name="preferences_override_control_server_ssl">Valdykite SSL</string>
-    <string name="preferences_override_control_server_ssl_sum">Norėdami valdyti serverį, naudokite šifruotą ryšį</string>
+    <string name="preferences_override_control_server">Keisti valdymo serverį</string>
+    <string name="preferences_override_control_server_sum">Įgalinti valdymo serverio konfiguraciją</string>
+    <string name="preferences_override_control_server_host">Valdymo serverio adresas</string>
+    <string name="preferences_override_control_server_port">Valdymo serverio prievadas</string>
+    <string name="preferences_override_control_server_ssl">Valdymo serverio SSL</string>
+    <string name="preferences_override_control_server_ssl_sum">Naudoti šifruotą ryšį jungiantis su valdymo serveriu</string>
     <string name="preferences_developer_options_disabled">Kūrėjo parinktys išjungtos</string>
     <string name="preferences_developer_options_available">Galimos kūrėjo parinktys</string>
     <string name="preferences_coverage_mode_disabled">Aprėpties režimas išjungtas</string>
     <string name="preferences_coverage_mode_available">Aprėpties režimas įjungtas</string>
     <string name="preferences_developer_try_again">Bandyk dar kartą!</string>
     <string name="preferences_developer_map_server">Žemėlapio serveris</string>
-    <string name="preferences_developer_map_override">Nepaisyti žemėlapio serverio</string>
-    <string name="preferences_developer_map_override_sum">Suaktyvinkite tinkintus žemėlapio serverio nustatymus</string>
-    <string name="preferences_developer_map_host">Žemėlapio host</string>
-    <string name="preferences_developer_map_port">Žemėlapio port</string>
+    <string name="preferences_developer_map_override">Keisti žemėlapio serverį</string>
+    <string name="preferences_developer_map_override_sum">Įgalinti žemėlapio serverio konfiguraciją</string>
+    <string name="preferences_developer_map_host">Žemėlapio serveris</string>
+    <string name="preferences_developer_map_port">Žemėlapio serverio prievadas</string>
     <string name="preferences_developer_map_ssl">Žemėlapio serverio SSL</string>
-    <string name="preferences_developer_map_ssl_sum">Naudokite šifruotą ryšį su žemėlapių serveriu</string>
+    <string name="preferences_developer_map_ssl_sum">Naudoti šifruotą ryšį jungiantis su žemėlapio serveriu</string>
     <string name="preferences_category_developer_qos_server">QoS serveris</string>
     <string name="preferences_developer_qos_ssl">QoS serverio SSL</string>
-    <string name="preferences_developer_qos_ssl_sum">Naudokite šifruotą ryšį su QoS serveriu</string>
+    <string name="preferences_developer_qos_ssl_sum">Naudoti šifruotą ryšį jungiantis su QOS serveriu</string>
     <string name="preferences_all_disabled">Viskas išjungta.</string>
     <string name="preferences_server_selection">Serverio pasirinkimas</string>
     <string name="preferences_default_server_selection">Numatytoji</string>
@@ -159,8 +159,8 @@
     <string name="measurement_ping_value">%1$s ms</string>
     <string name="measurement_ping_value_1f">%1$.1f ms</string>
     <string name="measurement_download_upload_speed">%1$s Mbit/s</string>
-    <string name="measurement_download">Atsisiųsti</string>
-    <string name="measurement_upload">Įkelti</string>
+    <string name="measurement_download">Gavimas</string>
+    <string name="measurement_upload">Siuntimas</string>
     <string name="measurement_dash">-</string>
     <string name="measurement_speed_chart_x_label_min">0s</string>
     <string name="measurement_speed_chart_x_label_max">8s</string>
@@ -171,8 +171,8 @@
     <string name="measurement_qos_web_site">Interneto svetainė</string>
     <string name="measurement_qos_transparent_connection">Skaidrus ryšys</string>
     <string name="measurement_qos_dns">DNS</string>
-    <string name="measurement_qos_tcp_ports">TCP port</string>
-    <string name="measurement_qos_udp_ports">UDP port</string>
+    <string name="measurement_qos_tcp_ports">TCP prievadas</string>
+    <string name="measurement_qos_udp_ports">UDP prievadas</string>
     <string name="measurement_qos_unmodified_content">Nepakeistas turinys</string>
     <string name="measurement_qos_traceroute">Maršruto sekimas</string>
     <string name="measurement_qos_voip">VoIP</string>
@@ -197,11 +197,12 @@
     <string name="label_upload">Siuntimas</string>
     <string name="label_download">Gavimas</string>
     <string name="label_ping">Delsa</string>
-    <string name="label_init">Pradž.</string>
+    <string name="label_init">Pradžia</string>
     <string name="measurement_progress_units" translatable="false">%</string>
     <string name="label_signal_strength">Signalas</string>
     <string name="network_label">Tinklas</string>
     <string name="technology_label">Technologijos</string>
+    <string name="lex_label_download_file">Atsiuntimas</string>
 
     <string name="speed_progress_units" translatable="false">Mbit/s</string>
     <string name="title_cancel_measurement">Ar tikrai norite atšaukti vykstantį matavimą?</string>
@@ -223,7 +224,7 @@
     <string name="history_item_header_up">Siuntimas</string>
     <string name="history_item_header_ping">Delsa</string>
     <string name="history_item_header_ms">ms</string>
-    <string name="history_no_data">Nėra duomenų.</string>
+    <string name="history_no_data">Nėra duomenų</string>
 
     <!-- History screen - content labeling -->
     <string name="history_settings">Nustatymai</string>
@@ -246,12 +247,12 @@
     <string name="results_qoe_messaging">Susirašinėjimas žinutėmis</string>
     <string name="results_qoe_web">Žiniatinklis</string>
     <string name="results_qoe_cloud">Debesis</string>
-    <string name="results_qoe_qos">QoS matavimaii</string>
+    <string name="results_qoe_qos">QoS matavimai</string>
     <string name="results_quality">Kokybė</string>
     <string name="results_network_type">Tipas</string>
     <string name="results_network_provider">Teikėjas</string>
     <string name="results_network_ssid">WLAN SSID</string>
-    <string name="result_test_details">Matavimo detalės</string>
+    <string name="result_test_details">Išsamesnė matavimo informacija</string>
     <string name="qos_result_success_count" translatable="false">%1$d / %2$d</string>
     <string name="qos_test_number" translatable="false"># %1$d</string>
     <string name="label_information">Informacija</string>
@@ -313,7 +314,7 @@
     <string name="title_filters_type">Žemėlapio tipas</string>
     <string name="title_filters_subtype">Įveskite parinktis</string>
 
-    <string name="about_email_subject">Paramos prašymas</string>
+    <string name="about_email_subject">Pagalbos užklausa</string>
     <string name="about_email_sending">Siunčiamas el. laiškas…</string>
 
     <string name="graph_signal_value">-%1$s dBm</string>
@@ -332,8 +333,8 @@
     <string name="title_loop_instruction_1">Aktyvinimas</string>
     <string name="title_loop_instruction_2">Naudojimas</string>
 
-    <string name="text_filter_devices">Įrenginiai</string>
-    <string name="text_filter_networks">Tinklai</string>
+    <string name="text_filter_devices">Įrenginys</string>
+    <string name="text_filter_networks">Tinklas</string>
     <string name="label_filter_options">Parinktys</string>
     <string name="label_filter">Filtruoti</string>
 
@@ -343,7 +344,7 @@
     <string name="loop_mode_no_gps">Nėra GPS</string>
     <string name="or">ar</string>
     <string name="loop_mode_finished">Matuok.lt ciklo režimas baigtas!</string>
-    <string name="loop_continue_to_results">Tęsti rezultatą</string>
+    <string name="loop_continue_to_results">Peržiūrėti rezultatus</string>
     <string name="loop_run_again">Pakartoti iš naujo</string>
     <string name="title_privacy_policy">Privatumo politika</string>
     <string name="text_terms_agree">Sutinku su Matuok.lt privatumo politika ir naudojimo sąlygomis.</string>
@@ -361,7 +362,7 @@
     <string name="dialog_signal_info_channel">Kanalas</string>
     <string name="text_local_results">Vietiniai rezultatai</string>
     <string name="signal_measurement_terms_title">Aktyvinimas ir naudojimas</string>
-    <string name="signal_measurement_terms_content">Signalo ciklo režimo parinktis techniškai suinteresuotiems vartotojams leidžia automatiškai kartoti signalo matavimus – neatliekant jokių greičio ar kokybės bandymų. Signalo ciklo režimą galima sustabdyti bet kuriuo metu, atitinkamai jis sustoja automatiškai po 48 valandų. Signalo ciklo režimas yra (tik) skirtas naudoti ES ir EEE. Įrenginio baterija greitai išsikrauna, matuojant tik signalą. Pertraukose tarp bandymų GPS ir ekranas išlieka aktyvūs, o signalo matavimai tęsiasi, o tai reiškia, kad energija išnaudojama daug greičiau nei budėjimo režimu. Todėl ciklo režimas turėtų būti naudojamas tik tuo atveju, jei yra prijungtas išorinis maitinimo šaltinis. Pabrežiame, kad dėl signalo ciklo režimo negalima atmesti galimybės, kad testeris yra identifikuotas.</string>
+    <string name="signal_measurement_terms_content">Signalo ciklo režimo parinktis skirta, techniškai suinteresuotiems vartotojams leidžia automatiškai kartoti signalo matavimus – neatliekant jokių greičio ar kokybės matavimų. Signalo ciklo režimą galima sustabdyti bet kuriuo metu, atitinkamai jis sustoja automatiškai po 48 valandų. Signalo ciklo režimas yra (tik) skirtas naudoti ES ir EEE. Įrenginio baterija greitai išsikrauna, matuojant tik signalą. Pertraukose tarp matavimų GPS ir ekranas išlieka aktyvūs, o signalo matavimai tęsiasi, o tai reiškia, kad energija išnaudojama daug greičiau nei budėjimo režimu. Todėl ciklo režimas turėtų būti naudojamas tik tuo atveju, jei yra prijungtas išorinis maitinimo šaltinis. Pabrežiame, kad dėl signalo ciklo režimo negalima atmesti galimybės, kad naudotojas yra identifikuotas.</string>
     <string name="home_ethernet" translatable="false">Ethernet</string>
 
     <!-- Other - content labeling -->
@@ -399,7 +400,7 @@
     <string name="cell_info_BSSID" translatable="false">BSSID</string>
     <string name="cell_info_SSID" translatable="false">SSID</string>
     <string name="cell_info_NCI" translatable="false">NCI</string>
-    
+
     <string name="label_location_access_disabled">Leidimas naudoti įrenginio buvimo vietą</string>
     <string name="label_location_access_disabled_explanation">Nustatymuose suteikite leidimą naudoti įrenginio buvimo vietą.</string>
     <string name="label_some_permission_denied">Trūksta aplikacijos leidimų</string>

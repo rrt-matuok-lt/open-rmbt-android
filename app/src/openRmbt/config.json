@@ -68,6 +68,12 @@
       "visible": false
     },
     {
+      "_comment": "TODO naudot sita vietoj ihardcodinto map url at: java/at/rtr/rmbt/android/ui/fragment/MapFragment.kt",
+      "name": "MAP_FALLBACK_WEBVIEW_URL",
+      "value": "https://matuok.pantera.dev/lt/Karte",
+      "visible": false
+    },
+    {
       "line1": "=======================================",
       "_section": "TEST SETTINGS",
       "line2": "======================================="
