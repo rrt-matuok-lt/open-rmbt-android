@@ -197,7 +197,7 @@
     <string name="label_upload">Siuntimas</string>
     <string name="label_download">Gavimas</string>
     <string name="label_ping">Delsa</string>
-    <string name="label_init">Pradžia</string>
+    <string name="label_init">Pradž.</string>
     <string name="measurement_progress_units" translatable="false">%</string>
     <string name="label_signal_strength">Signalas</string>
     <string name="network_label">Tinklas</string>
