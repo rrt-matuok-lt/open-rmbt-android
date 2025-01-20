@@ -49,7 +49,7 @@ class SpeedLineChart @JvmOverloads constructor(
         }
         paintStroke.color = typedArray.getColor(
             R.styleable.SpeedLineChart_progress_line_color,
-            context.getColor(R.color.colorAccent)
+            context.getColor(R.color.colorAccentOld)
         )
         paintStroke.style = Paint.Style.STROKE
         paintStroke.strokeWidth = STROKE_WIDTH

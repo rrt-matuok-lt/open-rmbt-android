@@ -16,10 +16,12 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
     <color name="colorPrimary">@android:color/white</color>
     <color name="colorPrimaryDark">@android:color/white</color>
-    <color name="colorAccent">#59b200</color>
+    <color name="colorAccent">#FF710A</color>
+    <color name="colorAccentOld">#59b200</color>
 
     <!-- Theme colors -->
-    <color name="toolbar_blue">#0071D7</color>
+    <!-- Notifications bar color -->
+    <color name="toolbar_blue">#4A5ECF</color>
     <color name="toolbar_gray">#F2F3F5</color>
     <color name="ic_launcher_background_old" tools:ignore="UnusedResources">#2D62B7</color>
     <color name="ic_launcher_background" tools:ignore="UnusedResources">#FFFFFF
@@ -30,7 +32,7 @@
     <color name="navigation_gray">#5f6368</color>
 
     <!-- Ripple effect color  -->
-    <color name="greenRipple">#4259b200</color>
+    <color name="greenRipple">#42ff710a</color>
     <color name="blackRipple">#26000000</color>
 
     <!--  White color with transparency -->
@@ -90,5 +92,19 @@
 
     <color name="ping_bar_color">#4D78Ed03</color>
 
-    <color name="colorSelector">#5559b200</color>
+    <color name="colorSelector">#55ff710a</color>
+
+<!-- New -->
+    <color name="newOrange1">#FF710A</color>
+    <color name="newOrange2">#FFD4B6</color>
+
+    <!-- 59 b2 00 replacint i FF710A -->
+<!--    <color name="oldOrange1">#FFff710a</color>-->
+<!--    <color name="oldOrange2">#66ff710a</color>-->
+
+
+    <color name="newBackground1">#4A5ECF</color>
+    <color name="newBackground2">#6077FC</color>
+
+<!--    <color name="new"></color>-->
 </resources>
