@@ -8,37 +8,37 @@
     },
     {
       "name": "CONTROL_SERVER_HOST",
-      "value": "matuok.pantera.dev",
+      "value": "test.matuok.lt",
       "visible": false
     },
     {
       "name": "CONTROL_SERVER_CHECK_PRIVATE_IPV4_HOST",
-      "value": "matuok.pantera.dev",
+      "value": "test.matuok.lt",
       "visible": false
     },
     {
       "name": "CONTROL_SERVER_CHECK_PRIVATE_IPV6_HOST",
-      "value": "matuok.pantera.dev",
+      "value": "test.matuok.lt",
       "visible": false
     },
     {
       "name": "CONTROL_SERVER_CHECK_PUBLIC_IPV4_URL",
-      "value": "matuok.pantera.dev/RMBTControlServer/ip",
+      "value": "test.matuok.lt/RMBTControlServer/ip",
       "visible": false
     },
     {
       "name": "CONTROL_SERVER_CHECK_PUBLIC_IPV6_URL",
-      "value": "matuok.pantera.dev/RMBTControlServer/ip",
+      "value": "test.matuok.lt/RMBTControlServer/ip",
       "visible": false
     },
     {
       "name": "CAPTIVE_PORTAL_WALLED_GARDEN_URL",
-      "value": "matuok.pantera.dev",
+      "value": "test.matuok.lt",
       "visible": false
     },
     {
       "name": "CONTROL_SERVER_NEW_HOST",
-      "value": "matuok.pantera.dev",
+      "value": "test.matuok.lt",
       "visible": false
     },
     {
@@ -66,13 +66,13 @@
     {
       "_comment": "TODO naudot sita vietoj ihardcodinto fallback url at: java/at/rtr/rmbt/android/viewmodel/HistoryDownloadViewModel.kt:107",
       "name": "STATISTICS_DOWNLOAD_SERVER",
-      "value": "https://matuok.pantera.dev/RMBTStatisticServer",
+      "value": "https://test.matuok.lt/RMBTStatisticServer",
       "visible": false
     },
     {
       "_comment": "TODO naudot sita vietoj ihardcodinto map url at: java/at/rtr/rmbt/android/ui/fragment/MapFragment.kt",
       "name": "MAP_FALLBACK_WEBVIEW_URL",
-      "value": "https://matuok.pantera.dev/lt/Karte",
+      "value": "https://test.matuok.lt/lt/Karte",
       "visible": false
     },
     {
@@ -262,22 +262,22 @@
     },
     {
       "name": "WEBSITE_URL",
-      "value": "https://www.matuok.pantera.dev",
+      "value": "https://www.test.matuok.lt",
       "visible": false
     },
     {
       "name": "EMAIL_ADDRESS",
-      "value": "RMBT Support <support@matuok.pantera.dev>",
+      "value": "RMBT Support <support@test.matuok.lt>",
       "visible": false
     },
     {
       "name": "DATA_PRIVACY_AND_TERMS_URL",
-      "value": "https://matuok.pantera.dev/%s/tk/netztestterms",
+      "value": "https://test.matuok.lt/%s/tk/netztestterms",
       "visible": true
     },
     {
       "name": "TERMS_FOR_ACCEPTANCE_URL",
-      "value": "https://matuok.pantera.dev/%s/tc_android.html",
+      "value": "https://test.matuok.lt/%s/tc_android.html",
       "visible": true
     },
     {
@@ -292,7 +292,7 @@
     },
     {
       "name": "MAP_SERVER_HOST",
-      "value": "matuok.pantera.dev",
+      "value": "test.matuok.lt",
       "visible": false
     },
     {
@@ -327,7 +327,7 @@
     },
     {
       "name": "MAP_FILTERS_ENDPOINT",
-      "value": "tiles/info",
+      "value": "v2/tiles/info",
       "visible": false
     },
     {

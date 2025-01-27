@@ -24,7 +24,7 @@ class NewsRepositoryImpl(
     override fun getNews(): Flow<List<NewsItem>?> = flow {
         val getNews = controlServerClient.getNews(
             NewsRequestBody(
-                language = Locale.getDefault().language,
+                language = "lt"/*Locale.getDefault().language*/,
                 lastNewsUid = newsSettings.lastNewsUID,
                 softwareVersionCode = deviceInfo.clientVersionCode.toString(),
                 uuid = clientUUID.value

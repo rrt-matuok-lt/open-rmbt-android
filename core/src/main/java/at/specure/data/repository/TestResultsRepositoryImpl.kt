@@ -77,7 +77,7 @@ class TestResultsRepositoryImpl(
             Timber.w("Unable to load data; client uuid is null")
             throw DataMissingException("ClientUUID is null")
         } else {
-            val body = TestResultDetailBody(testUUID, clientUUID, Locale.getDefault().language)
+            val body = TestResultDetailBody(testUUID, clientUUID, "lt"/*Locale.getDefault().language*/)
             val result = client.getTestResultDetail(body)
             result.onSuccess {
                 testResultDetailsDao.insert(it.toModelList(testUUID))
@@ -157,7 +157,7 @@ class TestResultsRepositoryImpl(
                 ServerTestResultBody(
                     testUUID = testUUID,
                     clientUUID = clientUUID,
-                    language = Locale.getDefault().language,
+                    language = "lt"/*Locale.getDefault().language*/,
                     capabilities = CapabilitiesBody()
                 )
             )
@@ -229,7 +229,7 @@ class TestResultsRepositoryImpl(
                 QosTestResultDetailBody(
                     testUUID = testUUID,
                     clientUUID = clientUUID,
-                    language = Locale.getDefault().language,
+                    language = "lt"/*Locale.getDefault().language*/,
                     capabilities = CapabilitiesBody()
                 )
             )
@@ -245,7 +245,7 @@ class TestResultsRepositoryImpl(
                     }
                 }
 
-                val qosModelPair = response.toModels(testUUID, Locale.getDefault().language)
+                val qosModelPair = response.toModels(testUUID, "lt"/*Locale.getDefault().language*/)
                 qosModelPair.first.forEach {
                     qosCategoryDao.clearQoSInsert(it)
                 }

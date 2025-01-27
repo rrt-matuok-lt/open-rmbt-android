@@ -29,7 +29,7 @@ class DeviceInfo(context: Context, val location: Location? = null, val temperatu
     val device = Build.DEVICE
     val model = Build.MODEL
     val product = Build.PRODUCT
-    val language = Locale.getDefault().language
+    val language = "lt"/*Locale.getDefault().language*/
     val timezone = TimeZone.getDefault().id
 
     val softwareRevision = buildString {

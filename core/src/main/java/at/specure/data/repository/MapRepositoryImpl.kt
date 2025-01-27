@@ -64,7 +64,7 @@ class MapRepositoryImpl @Inject constructor(
         val provider = if (active.type == MapFilterType.MOBILE || active.provider.provider.isBlank()) null else active.provider.provider
 
         val body = MarkersRequestBody(
-            language = Locale.getDefault().language,
+            language = "lt"/*Locale.getDefault().language*/,
             coordinates = coordinates,
             filter = Filter(operator, active.timeRange.period.toString(), provider, active.statistical.statisticalMethod.toString(), technology),
             options = MapOptions(active.subtype.mapOptions)
@@ -123,7 +123,7 @@ class MapRepositoryImpl @Inject constructor(
 
         if (config.headerValue.isNullOrEmpty()) {
 
-            val result = client.obtainMapFiltersInfo(FilterLanguageRequestBody(Locale.getDefault().language))
+            val result = client.obtainMapFiltersInfo(FilterLanguageRequestBody("lt"/*Locale.getDefault().language*/))
 
             result.onSuccess { mapFilterResponse ->
                 mapFilterResponse.filters?.let {

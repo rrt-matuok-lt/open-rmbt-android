@@ -129,7 +129,7 @@ class ResultViewModel @Inject constructor(
 
     fun downloadFile(format: String) {
         val languageCode = Locale.getDefault().toLanguageTag().split("-")[0]
-        val statisticServerUrl = controlServerSettings.statisticsMasterServerUrl ?: "https://matuok.pantera.dev/RMBTStatisticServer"
+        val statisticServerUrl = controlServerSettings.statisticsMasterServerUrl ?: "https://test.matuok.lt/RMBTStatisticServer"
         val url =
             if (format == "pdf") "$statisticServerUrl/export/pdf/$languageCode"
             else "$statisticServerUrl/opentests/search"

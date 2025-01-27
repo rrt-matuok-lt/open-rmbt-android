@@ -33,10 +33,11 @@ class TermsAndConditions @Inject constructor(context: Context, config: Config) {
 
     private val preferences = context.getSharedPreferences("terms_and_conditions.pref", Context.MODE_PRIVATE)
 
-    val defaultUrl = when (Locale.getDefault().language) {
-        "de" -> String.format(config.termsAcceptanceDefaultUrl, "de")
-        else -> String.format(config.termsAcceptanceDefaultUrl, "en")
-    }
+    val defaultUrl = String.format(config.termsAcceptanceDefaultUrl, "lt")
+//    val defaultUrl = when (Locale.getDefault().language) {
+//        "de" -> String.format(config.termsAcceptanceDefaultUrl, "de")
+//        else -> String.format(config.termsAcceptanceDefaultUrl, "en")
+//    }
 
     var tacUrl: String?
         get() = preferences.getString(KEY_TAC_URL, null)

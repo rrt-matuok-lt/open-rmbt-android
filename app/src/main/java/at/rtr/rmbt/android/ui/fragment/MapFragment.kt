@@ -118,7 +118,7 @@ class MapFragment : BaseFragment(), MapMarkerDetailsAdapter.MarkerDetailsCallbac
 
         if (!mapViewModel.state.playServicesAvailable.get()) {
             binding.webMap.settings.javaScriptEnabled = true
-            binding.webMap.loadUrl("https://matuok.pantera.dev/lt/Karte")
+            binding.webMap.loadUrl("https://test.matuok.lt/lt/Karte")
         }
     }
 
