@@ -52,7 +52,7 @@ private const val ANCHOR_V = 0.865f
 // under public domain terms
 private const val DEFAULT_LAT = (53.91F + 56.37F) / 2F
 private const val DEFAULT_LONG = (21.06F + 26.59F) / 2F
-private const val DEFAULT_ZOOM_LEVEL = 6F
+private const val DEFAULT_ZOOM_LEVEL = 6.5F
 private val DEFAULT_PRESENTATION_TYPE = MapPresentationType.AUTOMATIC
 
 class MapFragment : BaseFragment(), MapMarkerDetailsAdapter.MarkerDetailsCallback,

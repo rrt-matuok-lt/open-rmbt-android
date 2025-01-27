@@ -56,11 +56,13 @@
       "value": "true",
       "visible": false
     },
+
     {
       "name": "QOS_SSL",
       "value": "true",
       "visible": false
     },
+
     {
       "_comment": "TODO naudot sita vietoj ihardcodinto fallback url at: java/at/rtr/rmbt/android/viewmodel/HistoryDownloadViewModel.kt:107",
       "name": "STATISTICS_DOWNLOAD_SERVER",
@@ -85,7 +87,7 @@
     },
     {
       "name": "SKIP_QOS_TESTS",
-      "value": "true",
+      "value": "false",
       "visible": true
     },
     {
@@ -225,7 +227,7 @@
     },
     {
       "name": "DEVELOPER_ACTIVATE_CODE",
-      "value": "qwerty",
+      "value": "9165",
       "visible": false
     },
     {
@@ -235,7 +237,7 @@
     },
     {
       "name": "COVERAGE_ACTIVATE_CODE",
-      "value": "qwerty",
+      "value": "9165",
       "visible": false
     },
     {
@@ -320,7 +322,7 @@
     },
     {
       "name": "MAP_MARKER_SHOW_DETAILS_ROUTE",
-      "value": "en/Opentest?%s#noMMenu",
+      "value": "lt/Opentest?%s#noMMenu",
       "visible": false
     },
     {
