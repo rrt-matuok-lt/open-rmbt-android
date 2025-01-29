@@ -36,6 +36,8 @@ android {
             pattern = Pattern.compile("assemble(\\w+)")
         } else if (tskReqStr.contains("generate")) {
             pattern = Pattern.compile("generate(\\w+)")
+        } else if (tskReqStr.contains("bundle")) {
+            pattern = Pattern.compile("bundle(\\w+)")
         } else {
             pattern = Pattern.compile("lint(\\w+)")
         }
