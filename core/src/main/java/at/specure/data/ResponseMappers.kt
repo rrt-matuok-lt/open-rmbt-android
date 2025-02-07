@@ -38,6 +38,7 @@ import at.specure.data.entity.TestResultRecord
 import at.specure.result.QoECategory
 import at.specure.result.QoSCategory
 import org.joda.time.DateTime
+import timber.log.Timber
 import java.text.SimpleDateFormat
 import java.util.EnumMap
 import java.util.Locale
@@ -335,6 +336,7 @@ fun QosTestResultDetailResponse.toModels(
         var qosTestOrderNumber = 1
 
         resultList?.forEach { result ->
+            try{
             if (result.failureCount > 0) {
                 failureCount++
                 results.add(
@@ -359,6 +361,12 @@ fun QosTestResultDetailResponse.toModels(
             } else {
                 successfulTests.add(result)
                 successCount++
+            }
+            }catch (ex: Exception){
+                /// Lexita:
+                /// Cia kazkuris vienas itemas vis throwina NullPointerException.
+                /// try/catch uzdetas kad app necrashintu
+                Timber.e("[REDLOG] QosTestResultDetailResponse.toModels [4.1] Exception: $ex")
             }
         }
 
