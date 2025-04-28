@@ -150,7 +150,7 @@ public class ControlServerConnection {
             regData.put("type", clientType);
             regData.put("softwareVersion", clientVersion);
             regData.put("softwareRevision", RevisionHelper.getVerboseRevision());
-            regData.put("language", Locale.getDefault().getLanguage());
+            regData.put("language", "lt"/*Locale.getDefault().getLanguage()*/);
             regData.put("timezone", TimeZone.getDefault().getID());
             regData.put("time", System.currentTimeMillis());
 
@@ -270,7 +270,7 @@ public class ControlServerConnection {
             regData.put("type", clientType);
             regData.put("softwareVersion", clientVersion);
             regData.put("softwareRevision", RevisionHelper.getVerboseRevision());
-            regData.put("language", Locale.getDefault().getLanguage());
+            regData.put("language", "lt"/*Locale.getDefault().getLanguage()*/);
             regData.put("timezone", TimeZone.getDefault().getID());
             startTimeMillis = System.currentTimeMillis();
             regData.put("time", startTimeMillis);
@@ -393,7 +393,7 @@ public class ControlServerConnection {
                 testData.put("client_uuid", clientUUID);
                 testData.put("client_name", Config.RMBT_CLIENT_NAME);
                 testData.put("client_version", result.client_version);
-                testData.put("client_language", Locale.getDefault().getLanguage());
+                testData.put("client_language", "lt"/*Locale.getDefault().getLanguage()*/);
 
                 testData.put("time", System.currentTimeMillis());
 
@@ -526,7 +526,7 @@ public class ControlServerConnection {
             try {
                 testData.put("client_uuid", clientUUID);
                 testData.put("client_name", Config.RMBT_CLIENT_NAME);
-                testData.put("client_language", Locale.getDefault().getLanguage());
+                testData.put("client_language", "lt"/*Locale.getDefault().getLanguage()*/);
 
                 testData.put("time", System.currentTimeMillis());
 
@@ -582,7 +582,7 @@ public class ControlServerConnection {
 
         try {
             testData.put("client_uuid", clientUUID);
-            testData.put("client_language", Locale.getDefault().getLanguage());
+            testData.put("client_language", "lt"/*Locale.getDefault().getLanguage()*/);
             if (testUuid != null)
                 testData.put("test_uuid", testUuid);
             else

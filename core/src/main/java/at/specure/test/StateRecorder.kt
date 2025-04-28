@@ -116,7 +116,7 @@ class StateRecorder @Inject constructor(
 
         updateLocationInfo()
 
-        locationWatcher.liveData.observe(lifecycle, Observer { info ->
+        locationWatcher.liveData.observe(lifecycle, Observer { info: LocationInfo? ->
             if (locationWatcher.state == LocationState.ENABLED) {
                 _locationInfo = info
                 saveLocationInfo()
@@ -150,11 +150,12 @@ class StateRecorder @Inject constructor(
     }
 
     override fun onClientReady(testUUID: String, loopUUID: String?, testToken: String, testStartTimeNanos: Long, threadNumber: Int) {
+        Timber.d("INITIAL DATA on client ready testUUID $testUUID, loopUUId $loopUUID, testToken: $testToken, start: $testStartTimeNanos, threadNumber $threadNumber")
         this.testUUID = testUUID
         this.testToken = testToken
         this.testStartTimeNanos = testStartTimeNanos
         qosRunning = false
-        Timber.d("Signal saving time OCR: starting time: $testStartTimeNanos   current time: ${System.nanoTime()}")
+        Timber.d("TRS Signal saving time OCR: starting time: $testStartTimeNanos   current time: ${System.nanoTime()}")
         runBlocking {
             val tasks = listOf(
                 async(Dispatchers.IO) {
@@ -193,7 +194,7 @@ class StateRecorder @Inject constructor(
     }
 
     private fun saveTestInitialTestData(testUUID: String, loopUUID: String?, testToken: String, testStartTimeNanos: Long, threadNumber: Int): Unit {
-        Timber.d("testUUID $testUUID, loopUUId $loopUUID, testToken: $testToken, start: $testStartTimeNanos, threadNumber $threadNumber")
+        Timber.d("INITIAL DATA testUUID $testUUID, loopUUId $loopUUID, testToken: $testToken, start: $testStartTimeNanos, threadNumber $threadNumber")
         testRecord = TestRecord(
             uuid = testUUID,
             loopUUID = loopUUID,
@@ -354,7 +355,7 @@ class StateRecorder @Inject constructor(
                     detailedNetworkInfo?.let {
 
                         val cellNetworkInfo = detailedNetworkInfo.networkInfo
-                        val active5GNetworkInfos = detailedNetworkInfo.secondary5GActiveCellNetworks
+                        val active5GNetworkInfos = detailedNetworkInfo.secondary5GActiveCellNetworks?.toList()
                         val otherCells = detailedNetworkInfo.allCellInfos?.toMutableList()
                         val testStartTimeNanos = testStartTimeNanos ?: 0
 
@@ -363,9 +364,17 @@ class StateRecorder @Inject constructor(
                         }
 
                         saveNetworkInformation(cellNetworkInfo, detailedNetworkInfo.signalStrengthInfo, uuid, testStartTimeNanos)
-                        active5GNetworkInfos?.forEachIndexed { index, cellNetworkInfo ->
-                            otherCells?.remove(cellNetworkInfo?.rawCellInfo)
-                            saveNetworkInformation(cellNetworkInfo, detailedNetworkInfo.secondary5GActiveSignalStrengthInfos?.get(index), uuid, testStartTimeNanos)
+                        active5GNetworkInfos?.forEachIndexed { index, cellNetworkInfoInner ->
+                            otherCells?.remove(cellNetworkInfoInner?.rawCellInfo)
+                            // sometimes we are not getting the signal for NR cells as their are only neighbouring cells so there is empty list
+                            val signals5GisNullOrEmpty = detailedNetworkInfo.secondary5GActiveSignalStrengthInfos.isNullOrEmpty()
+                            val signalsIndexIsOutOfBound = index > (detailedNetworkInfo.secondary5GActiveSignalStrengthInfos?.lastIndex ?: -1)
+                            val signalStrengthInfo = if (signals5GisNullOrEmpty || signalsIndexIsOutOfBound) {
+                                null
+                            } else {
+                                detailedNetworkInfo.secondary5GActiveSignalStrengthInfos?.get(index)
+                            }
+                            saveNetworkInformation(cellNetworkInfoInner, signalStrengthInfo, uuid, testStartTimeNanos)
                         }
 
                         if (config.headerValue.isNullOrEmpty()) {
@@ -569,6 +578,8 @@ class StateRecorder @Inject constructor(
     }
 
     override fun onTestCompleted(result: TotalTestResult, waitQosResults: Boolean) {
+        Timber.d("TRS test complete ${result.speed_download}")
+        Timber.d("onTestComplete client_version is ${result.client_version}")
         testRecord?.apply {
             threadCount = result.num_threads
             portRemote = result.port_remote
@@ -632,6 +643,7 @@ class StateRecorder @Inject constructor(
     }
 
     override fun onQoSTestCompleted(qosResult: QoSResultCollector?) {
+        Timber.d("TRS QOS test complete")
         val uuid = testUUID
         val token = testToken
         val data: JSONArray? = qosResult?.toJson()
@@ -639,6 +651,7 @@ class StateRecorder @Inject constructor(
             testRecord?.lastQoSStatus = TestStatus.QOS_END
             repository.updateQoSTestStatus(uuid, TestStatus.QOS_END)
             Timber.d("QOSLOG: ${TestStatus.QOS_END}")
+            Timber.d("TRS QOS test loading started")
             repository.saveQoSResults(uuid, token, data) {
                 Timber.d("QOS test complete loaded")
             }

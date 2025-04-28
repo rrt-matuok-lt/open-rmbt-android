@@ -4,15 +4,15 @@
     "type": "APK",
     "kind": "Directory"
   },
-  "applicationId": "lt.lexita.matuok_lt",
+  "applicationId": "lt.lexita.matuok_lt_test",
   "variantName": "openRmbtRelease",
   "elements": [
     {
       "type": "SINGLE",
       "filters": [],
       "attributes": [],
-      "versionCode": 12,
-      "versionName": "0.3.3",
+      "versionCode": 15,
+      "versionName": "1.1.0",
       "outputFile": "app-openRmbt-release.apk"
     }
   ],

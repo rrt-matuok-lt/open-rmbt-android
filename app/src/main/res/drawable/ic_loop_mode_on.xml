@@ -6,10 +6,8 @@
 
     <group android:translateX="8">
   <path
-      android:fillColor="#FF000000"
-      android:pathData="M8,12L48,12A8,8 0,0 1,56 20L56,20A8,8 0,0 1,48 28L8,28A8,8 0,0 1,0 20L0,20A8,8 0,0 1,8 12z"
-      android:strokeAlpha="0.1"
-      android:fillAlpha="0.1"/>
+      android:fillColor="#545454"
+      android:pathData="M8,12L48,12A8,8 0,0 1,56 20L56,20A8,8 0,0 1,48 28L8,28A8,8 0,0 1,0 20L0,20A8,8 0,0 1,8 12z" />
   <path
       android:pathData="M42,34A14,14 0,1 1,56 20,14 14,0 0,1 42,34Z"
       android:fillColor="#fff"/>

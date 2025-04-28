@@ -14,6 +14,7 @@ import at.specure.data.entity.TestResultRecord
 import at.specure.data.repository.TestResultsRepository
 import at.specure.util.download.FileDownloadData
 import at.specure.util.download.FileDownloader
+import kotlinx.coroutines.CoroutineName
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.flow.catch
 import kotlinx.coroutines.flow.flowOn
@@ -62,7 +63,7 @@ class ResultViewModel @Inject constructor(
 
     init {
         addStateSaveHandler(state)
-        this.viewModelScope.launch {
+        this.viewModelScope.launch(CoroutineName("ResultViewModelInit")) {
             fileDownloader.downloadStateFlow.collect { state ->
                 when (state) {
                     is FileDownloader.DownloadState.Initial -> {
@@ -109,7 +110,7 @@ class ResultViewModel @Inject constructor(
         }
     }
 
-    fun loadTestResults() = launch {
+    fun loadTestResults() = launch(CoroutineName("ResultViewModelLoadTestResults")) {
         testResultsRepository.loadTestResults(state.testUUID).zip(
             testResultsRepository.loadTestDetailsResult(state.testUUID)
         ) { a, b -> a && b }
@@ -128,14 +129,14 @@ class ResultViewModel @Inject constructor(
     }
 
     fun downloadFile(format: String) {
-        val languageCode = Locale.getDefault().toLanguageTag().split("-")[0]
+        val languageCode = "lt"/*Locale.getDefault().toLanguageTag().split("-")[0]*/
         val statisticServerUrl = controlServerSettings.statisticsMasterServerUrl ?: "https://test.matuok.lt/RMBTStatisticServer"
         val url =
             if (format == "pdf") "$statisticServerUrl/export/pdf/$languageCode"
             else "$statisticServerUrl/opentests/search"
         Timber.d("REDLOG: download file format: $format, languageCode: $languageCode, url: $url")
         this.testServerResultLiveData.value?.testOpenUUID?.let { openUUID ->
-            viewModelScope.launch {
+            viewModelScope.launch(CoroutineName("ResultViewModelDownloadFile")) {
                 fileDownloader.downloadFile(
                     urlString = url,
                     openUuid = openUUID,

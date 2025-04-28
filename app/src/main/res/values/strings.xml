@@ -163,7 +163,7 @@
     <string name="measurement_upload">Siuntimas</string>
     <string name="measurement_dash">-</string>
     <string name="measurement_speed_chart_x_label_min">0s</string>
-    <string name="measurement_speed_chart_x_label_max">8s</string>
+    <string name="measurement_speed_chart_x_label_max">7s</string>
     <string name="measurement_ping">Delsa</string>
     <string name="measurement_down">Gavimas</string>
     <string name="measurement_up">Siuntimas</string>
@@ -330,8 +330,10 @@
     <string name="text_button_accept">Priimti</string>
     <string name="text_loop_instruction_1">Techniškai besidomintiems vartotojams skirta ciklo režimo parinktis leidžia automatiškai kartoti Matuok.lt. Pirmasis matavimas prasideda iškart po ciklo režimo aktyvavimo; tolesni matavimai atliekami pasibaigus laukimo laikui arba įveikus nurodytą atstumą. Matavimai bus atliekami tol, kol bus pasiektas sukonfigūruotas matavimų skaičius. Signalo stiprumas matuojamas nuolat, taip pat tarp dviejų bandymų. Ciklo režimas gali būti sustabdytas bet kuriuo metu, atitinkamai jis sustoja po 48 valandų. Reikia aiškiai pabrėžti, kad dėl ciklo režimo negalima atmesti galimybės, kad bandytojas yra identifikuotas.</string>
     <string name="text_loop_instruction_2">Esant dideliam poreikiui arba labai dideliam bandymų skaičiui konkrečioje srityje, bandymo sistema gali atmesti ciklo režimą, kad būtų išvengta perkrovos. Atkreipkite dėmesį, kad „loop-modus“ yra (tik) skirtas naudoti ES ir EEE. Ciklo režimas sunaudoja daug duomenų. Esant greitam ryšiui, 10 testų gali sunaudoti 1 GB ar daugiau duomenų. Todėl primygtinai rekomenduojama ciklo režimą naudoti tik su tikrais neriboto duomenų kiekio tarifais, kai papildomas duomenų kiekis nesukelia papildomų išlaidų. Ciklo režimas greitai iškraudinėja įrenginio bateriją. Pertraukose tarp bandymų GPS ir ekranas išlieka aktyvūs, o signalo matavimai tęsiasi, o tai reiškia, kad energija išnaudojama daug greičiau nei budėjimo režimu. Todėl ciklo režimas turėtų būti naudojamas tik tuo atveju, jei yra išorinis maitinimo šaltinis.</string>
+    <string name="text_loop_instruction_3">Matuok.lt vietos nustatymo leidimą naudoja tik matavimo metu, tačiau leidimas veikti fone reikalingas tam, kad ciklo režimas galėtų veikti fone.\n\nMatuok.lt renka vietos duomenis, kad užfiksuotų matavimo vietą ciklo režimo metu, net kai programa veikia fone.</string>
     <string name="title_loop_instruction_1">Aktyvinimas</string>
     <string name="title_loop_instruction_2">Naudojimas</string>
+    <string name="title_loop_instruction_3">Leidimai</string>
 
     <string name="text_filter_devices">Įrenginys</string>
     <string name="text_filter_networks">Tinklas</string>
@@ -356,6 +358,7 @@
     <string name="radio_info_warning_message">Būkite atsargūs: keisdami išplėstinius konfigūracijos nustatymus, galite pakenkti įrenginio stabilumui ir veikimui.</string>
     <string name="accept_risk">Prisiimu riziką</string>
     <string name="preferences_connection_details_not_supported">Išplėstinė ryšio informacija šiame įrenginyje nepalaikoma</string>
+    <string name="preferences_unable_to_find_browser_app">Nepavyko atverti naršyklės.</string>
 
     <string name="dialog_signal_info_band">Grupė</string>
     <string name="dialog_signal_info_connection_status" translatable="false">Būsena</string>
@@ -363,7 +366,7 @@
     <string name="text_local_results">Vietiniai rezultatai</string>
     <string name="signal_measurement_terms_title">Aktyvinimas ir naudojimas</string>
     <string name="signal_measurement_terms_content">Signalo ciklo režimo parinktis skirta, techniškai suinteresuotiems vartotojams leidžia automatiškai kartoti signalo matavimus – neatliekant jokių greičio ar kokybės matavimų. Signalo ciklo režimą galima sustabdyti bet kuriuo metu, atitinkamai jis sustoja automatiškai po 48 valandų. Signalo ciklo režimas yra (tik) skirtas naudoti ES ir EEE. Įrenginio baterija greitai išsikrauna, matuojant tik signalą. Pertraukose tarp matavimų GPS ir ekranas išlieka aktyvūs, o signalo matavimai tęsiasi, o tai reiškia, kad energija išnaudojama daug greičiau nei budėjimo režimu. Todėl ciklo režimas turėtų būti naudojamas tik tuo atveju, jei yra prijungtas išorinis maitinimo šaltinis. Pabrežiame, kad dėl signalo ciklo režimo negalima atmesti galimybės, kad naudotojas yra identifikuotas.</string>
-    <string name="home_ethernet" translatable="false">Ethernet</string>
+    <string name="home_ethernet" translatable="false">Eternetas</string>
 
     <!-- Other - content labeling -->
     <string name="content_label_close">Uždaryti</string>
@@ -427,4 +430,96 @@
     <string name="notification_permission_title">3. Pranešimų leidimas</string>
     <string name="notification_permission_explanation">Pranešimų leidimas reikalingas, kad aplikacija veiktų atliekant matavimus fone. Be pranešimų leidimo negalėsite stebėti matavimo eigos, kai programa veiks fone. Pranešimų leidimas yra reikalingas norint paleisti ciklo režimą fone.</string>
 
+    <string name="unknown_signal_mobile">Nežinomas mobiliojo ryšio signalas</string>
+    <string name="unknown_signal_2G">Nežinomas 2G signalas</string>
+    <string name="unknown_signal_3G">Nežinomas 3G signalas</string>
+    <string name="unknown_signal_4G">Nežinomas 4G signalas</string>
+    <string name="unknown_signal_5G">Nežinomas 5G signalas</string>
+    <string name="unknown_signal_wifi">Nežinomas Wi-Fi signalas</string>
+    <string name="unknown_network_type">Nežinomas tinklo tipas</string>
+
+    <string name="bad_signal_2g">Silpnas 2G signalas</string>
+    <string name="normal_signal_2g">Vidutinis 2G signalas</string>
+    <string name="good_signal_2g">Geras 2G signalas</string>
+    <string name="excellent_signal_2g">Puikus 2G signalas</string>
+
+    <string name="bad_signal_3g">Silpnas 3G signalas</string>
+    <string name="normal_signal_3g">Vidutinis 3G signalas</string>
+    <string name="good_signal_3g">Geras 3G signalas</string>
+    <string name="excellent_signal_3g">Puikus 3G signalas</string>
+
+    <string name="bad_signal_4g">Silpnas 4G signalas</string>
+    <string name="normal_signal_4g">Vidutinis 4G signalas</string>
+    <string name="good_signal_4g">Geras 4G signalas</string>
+    <string name="excellent_signal_4g">Puikus 4G signalas</string>
+
+    <string name="bad_signal_5g">Silpnas 5G signalas</string>
+    <string name="normal_signal_5g">Vidutinis 5G signalas</string>
+    <string name="good_signal_5g">Geras 5G signalas</string>
+    <string name="excellent_signal_5g">Puikus 5G signalas</string>
+
+    <string name="bad_signal_wifi">Silpnas Wi-Fi signalas</string>
+    <string name="normal_signal_wifi">Vidutinis Wi-Fi signalas</string>
+    <string name="good_signal_wifi">Geras Wi-Fi signalas</string>
+    <string name="excellent_signal_wifi">Puikus Wi-Fi signalas</string>
+
+    <string name="network_type_bluetooth">Bluetooth tinklo tipas</string>
+    <string name="network_type_vpn">VPN tinklo tipas</string>
+    <string name="network_type_lan">LAN tinklo tipas</string>
+    <string name="network_type_browser">Naršyklės tinklo tipas</string>
+
+    <string name="toggle_loop_mode">Perjungti ciklo režimą</string>
+
+    <string name="previous_result">Ankstesnis rezultatas</string>
+    <string name="next_result">Sekantis reezultatas</string>
+
+    <string name="download_history_as_pdf">Atsisiųsti istoriją PDF formatu</string>
+    <string name="download_history_as_xlsx">Atsisiųsti istoriją XLSX formatu</string>
+    <string name="download_history_as_csv">Atsisiųsti istoriją CSV formatu</string>
+
+    <string name="history_list_header_date">Istorijos sąrašo antraštė: data</string>
+    <string name="history_list_header_download_speed">Istorijos sąrašo antraštė: gavimo sparta</string>
+    <string name="history_list_header_download_speed_units">Istorijos sąrašo antraštė: gavimo spartos vienetai: Mbit/s </string>
+    <string name="history_list_header_upload_speed">Istorijos sąrašo antraštė: siuntimo sparta</string>
+    <string name="history_list_header_upload_speed_units">Istorijos sąrašo antraštė: siuntimo spartos vienetai: Mbit/s </string>
+    <string name="history_list_header_ping">Istorijos sąrašo antraštė: delsa</string>
+    <string name="history_list_header_ping_units">Istorijos sąrašo antraštė: delsos matavimo vienetai: milisekundės</string>
+
+    <string name="home_start_measurement">Pradėti matavimą</string>
+    <string name="title">Antraštė: </string>
+    <string name="subtitle">Paantraštė: </string>
+
+    <string name="home_signal_measurement_toggle_on">Signalo matavimas įjungtas</string>
+    <string name="home_signal_measurement_toggle_off">Signalo matavimas išjungtas</string>
+
+    <string name="ipv4_no_info">IPv4: nėra informacijos</string>
+    <string name="ipv4_no_address">IPv4: nėra adreso</string>
+    <string name="ipv4_no_nat">IPv4: nėra NAT</string>
+    <string name="ipv4">IPv4: NAT</string>
+    <string name="ipv6_no_info">IPv6: nėra informacijos</string>
+    <string name="ipv6_no_address">IPv6: nėra adreso</string>
+    <string name="ipv6_no_nat">IPv6: nėra NAT</string>
+    <string name="ipv6">IPv6: NAT</string>
+
+    <string name="bottom_navigation_area">Apatinė naršymo sritis</string>
+    <string name="active_history_filters_container">Istorijos filtrų konteineris</string>
+    <string name="history_list_header_container">Istorijos antraštės konteineris</string>
+    <string name="remove_filter">Pašalinti filtrą</string>
+
+    <string name="share_result">Dalintis rezultatu</string>
+    <string name="test_result_from">Matavimo rezultatas iš:</string>
+
+    <string name="classification_undefined">Klasifikacija: nėra</string>
+    <string name="classification_bad">Klasifikacija: prasta</string>
+    <string name="classification_normal">Klasifikacija: vidutinė</string>
+    <string name="classification_good">Klasifikacija: gera</string>
+    <string name="classification_excellent">Klasifikacija: puiki</string>
+    <string name="title_test_details">Išsami matavimo informacija</string>
+
+    <string name="test_result_status">Matavimo rezultato būsena:</string>
+    <string name="more_sims_active_dialog_title">Aktyvios kelios SIM kortelės</string>
+    <string name="more_sims_active_dialog_text">Signalo matavimas palaiko tik vieną SIM. Išjunkite antrąją SIM kortelę.</string>
+    <string name="confirm">Patvirtinti</string>
+    <string name="wrong_network_type_active_dialog_title">Ne mobilusis ryšys</string>
+    <string name="wrong_network_type_active_dialog_text">Išjunkite Wi-Fi (arba kitą ne mobilujį ryšį)</string>
 </resources>
